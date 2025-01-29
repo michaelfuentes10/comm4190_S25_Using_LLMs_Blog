@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "My Explorations with LLMs",
     "section": "",
-    "text": "A test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+    "text": "A test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -26,12 +26,5 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
-  },
-  {
-    "objectID": "posts/Blog_1/MF_Blog_1.html",
-    "href": "posts/Blog_1/MF_Blog_1.html",
-    "title": "LLMs",
-    "section": "",
-    "text": "---\ntitle: \"A test post\"\ndescription: \"An example post from a Jupyter notebook\"\nauthor: \"Michael Fuentes\"\ndate: \"2/2/2024\"\ncategories:\n  - LLMs\n  - prompting\n  - logic\n---"
   }
 ]
