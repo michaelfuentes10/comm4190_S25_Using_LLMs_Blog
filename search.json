@@ -56,6 +56,13 @@
     "text": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:\nThis is what ChatGPT is saying to you to change the subject: “Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nDeepseek: Effective in policy evaluation through a blend of causal inference for unbiased impact analysis, reinforcement learning for adaptive solutions, and Bayesian modeling for precise uncertainty estimation."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Explorations with LLMs",
+    "section": "",
+    "text": "Coding LLMs\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -63,11 +70,11 @@
     "text": "About this blog"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Explorations with LLMs",
+    "objectID": "posts/Blog_3/Blog_3.html",
+    "href": "posts/Blog_3/Blog_3.html",
+    "title": "Coding LLMs",
     "section": "",
-    "text": "ChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+    "text": "from openai import OpenAI\nfrom dotenv import load_dotenv\n_ = load_dotenv()\n\n\nclient = OpenAI()\n\n\nmodels = client.models.list()\n\nfor model in models.data:\n        print(model.id)\n\ngpt-4o-mini-audio-preview\ngpt-4o-mini-audio-preview-2024-12-17\ngpt-4o-mini-realtime-preview\ndall-e-2\ngpt-4o-mini-2024-07-18\ngpt-4o-mini\no1-mini-2024-09-12\no1-preview-2024-09-12\no1-mini\no1-preview\nwhisper-1\ndall-e-3\ngpt-4-turbo\ngpt-4o-audio-preview\ngpt-4o-audio-preview-2024-10-01\nbabbage-002\nomni-moderation-latest\nomni-moderation-2024-09-26\ntts-1-hd-1106\ngpt-4o-2024-08-06\no3-mini\no3-mini-2025-01-31\ngpt-4o\ngpt-4o-2024-05-13\ntts-1-hd\no1\no1-2024-12-17\ngpt-4o-2024-11-20\ngpt-4-turbo-2024-04-09\ngpt-4-0613\nchatgpt-4o-latest\ntts-1\ngpt-3.5-turbo-16k\ntts-1-1106\ndavinci-002\ngpt-4-turbo-preview\ngpt-4o-mini-realtime-preview-2024-12-17\ngpt-3.5-turbo-1106\ngpt-3.5-turbo-instruct\ngpt-4\ngpt-4o-realtime-preview-2024-10-01\ngpt-3.5-turbo-instruct-0914\ngpt-3.5-turbo-0125\ngpt-4o-audio-preview-2024-12-17\ngpt-4o-realtime-preview-2024-12-17\ngpt-3.5-turbo\ntext-embedding-3-large\ngpt-4o-realtime-preview\ntext-embedding-3-small\ngpt-4-0125-preview\ngpt-4-1106-preview\ntext-embedding-ada-002\n\n\n\nmodel = \"gpt-4o\"\nsystem_role = \"\"\ninitial_prompt = '''\n        Hi!\n        '''\nmessages = [\n    {\"role\": \"system\", \"content\": system_role} ,\n    {\"role\": \"user\", \"content\": initial_prompt},\n    # {\"role\": \"assistant\", \"content\": \"\" },\n    # {\"role\": \"user\", \"content\": \"\" }\n]\n\n\ncompletion = client.chat.completions.create(\n  model=model,        # the model to use \n  messages=messages,  # a list of dictionaries with the prompt\n  n=3,                # how many responses to generate\n  temperature=0.8     # temperature parameter\n)\n\nresponse = completion.choices[0].message.content\n\n\nfor resp in completion.choices:\n    print(resp.message.content)\n    print(\"---\")\n\nHello! How can I assist you today?\n---\nHello! How can I assist you today?\n---\nHello! How can I assist you today?\n---"
   },
   {
     "objectID": "posts/Blog_1/MF_Blog_1.html",
