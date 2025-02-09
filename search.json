@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "My Explorations with LLMs",
     "section": "",
-    "text": "Coding LLMs\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+    "text": "Levels of Education: How ChatGPT 4o teaches about data\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -72,9 +72,9 @@
   {
     "objectID": "posts/Blog_3/Blog_3.html",
     "href": "posts/Blog_3/Blog_3.html",
-    "title": "Coding LLMs",
+    "title": "Levels of Education: How ChatGPT 4o teaches about data",
     "section": "",
-    "text": "Hello! How can I assist you today?\n---\nHello! How can I assist you today?\n---\nHello! How can I assist you today?\n---"
+    "text": "Hello! We all love data, now don’t we? Data makes up phones, computers, and of course, AI, which takes in data and out put data. Data makes the world go round. So, with AI being the future of data understanding, it is important to be educated in what the fundamental concepts of techology is: data.\nToday, I asked ChatGPT to define data in different ways to people of different ages. Those ages are 5 year olds, middle schooler, high school graduate, and a data scientist. Let’s see how it went!\n\n\nOf course! Imagine you have a big box of colorful building blocks. Each block is like a tiny piece of information. Some blocks might be red, some blue, and some yellow. When you put these blocks together, you can build all sorts of things, like a house or a car.\n\nData is like those building blocks, but instead of building houses or cars, data helps people understand things, make decisions, and create new ideas. Just like you can count how many red or blue blocks you have, people use data to count, measure, and look at all sorts of things in the world.\n---"
   },
   {
     "objectID": "posts/Blog_1/MF_Blog_1.html",
