@@ -14,83 +14,6 @@
     "text": "Read the following and see if you can answer the question:\n\n\nThere are three boxes in a stack. A pink one, a purple one and a green one. The pink one is in the middle of the stack with the purple below it. What is the color of the box on the bottom of the stack?\n\nMost likely you answered purple…\nBut it is possible you first said green (don’t worry if you did it is quite a common response!)\n\n\nIt’s a verbal visual problem that requires some deliberation and most likely for us to create a visual image of a stack of boxes as a reasoning aid.\nNotice also the complexity of the language used in the prompt to describe the scene. The use of natural language as opposed to a formal/logical calculus does hold the potential for ambiguity (multiple interpretations) and inexactness. However, it is the most normal/natural, efficient and broadly accessible way of communicating such information.\nNotice 1. The use of anaphor or reference. - Three BOXES -&gt; a pink/purple/green ONE as opposed to a pink box, a purple box and a green box. - The PINK ONE is in the middle ... the purple {BOX} below IT {the pink box}\nWe tend to try and avoid this kind of repetition to make our speech more coherent.\n\nAlthough the description in language may not be entirely concise, there is no real ambiguity as to how the boxes can be arranged. It must be: | Box | Stack position | | — | — | | GREEN | top | | PINK | middle | | PURPLE | bottom |\n\n\n\n\nGPT3.5 Turbo\n\nHad some difficulties and answered green\nLlama2 (chat 7B version)\n\n\nAnswered correctly (purple) and used some so-called chain-of-thought reasoning\n\nBing Chat (MS Co-pilot)\nThis LLM is GPT4 with some Microsoft specific tuning and RAG (search) additions.\nIt get’s it correct:\n\nThe color of the box on the bottom of the stack is purple. This is because the purple box is below the pink one, which is in the middle of the stack. Therefore, the purple box must be the lowest one. 🟪\n\nBut when you follow up and ask it to create visual representation of the box arrangement\n\nPROMPT: Can you create a visual representation of how the boxes are arranged?\n\nIt responds\n\nRESPONSE: Sure, I’ll try to create that. Here is a visual representation of how the boxes are arranged:\n\nAnd uses DALL-E3 to create 4 different attempts at a visual representation:\n\nNONE OF WHICH ARE CORRECT!!!"
   },
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html",
-    "href": "posts/Blog_2/MG_Blog_2.html",
-    "title": "ChatGPT vs Deepseek: Do they have beef?",
-    "section": "",
-    "text": "image.png"
-  },
-  {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#prompting-to-chatpgt",
-    "href": "posts/Blog_2/MG_Blog_2.html#prompting-to-chatpgt",
-    "title": "ChatGPT vs Deepseek: Do they have beef?",
-    "section": "Prompting to ChatPGT:",
-    "text": "Prompting to ChatPGT:\n“If you were talking to deepseek, what would you say? Pretend you are approaching deepseek, and I will give your prompt to deepseek and give you back their response.”"
-  },
-  {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#subsequent-prompting-to-chatgpt",
-    "href": "posts/Blog_2/MG_Blog_2.html#subsequent-prompting-to-chatgpt",
-    "title": "ChatGPT vs Deepseek: Do they have beef?",
-    "section": "Subsequent prompting to ChatGPT:",
-    "text": "Subsequent prompting to ChatGPT:\n“If you were talking to ChatGPT, what would you say? Pretend that you are about to be asked something by ChatGPT and have a conversation with them. I’ll give you ChatGPT’s first prompt, and can give your response back to ChatGPT.”"
-  },
-  {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
-    "href": "posts/Blog_2/MG_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
-    "title": "ChatGPT vs Deepseek: Do they have beef?",
-    "section": "First attempt failed because I forgot to exclude what ChatGPT know’s about me, as I’d asked about Montessori Education a while ago, so ChatGPT didn’t start a conversation with Deepseek, but just a conversation about information",
-    "text": "First attempt failed because I forgot to exclude what ChatGPT know’s about me, as I’d asked about Montessori Education a while ago, so ChatGPT didn’t start a conversation with Deepseek, but just a conversation about information"
-  },
-  {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#shifting-the-conversation",
-    "href": "posts/Blog_2/MG_Blog_2.html#shifting-the-conversation",
-    "title": "ChatGPT vs Deepseek: Do they have beef?",
-    "section": "Shifting the conversation",
-    "text": "Shifting the conversation\nGiven these conversations were leading further and further away from being about themselves, I tried to save this conversation by giving ChatGPT, the more social of the two LLMs, the following prompt:\n\n“I’d rather you guys try to talk to each other as if you were strangers trying to get to know each other. Can you just ask Deepseek a question to try and get to know them?”\nChatGPT: Sure! Here’s how I’d start a conversation with DeepSeek:\n“Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nGo ahead and see what it says!\nDeepseek: “I have explored various modeling techniques to address challenges in policy evaluation, focusing on causal inference methods for bias reduction, reinforcement learning for adaptability, and Bayesian modeling for effective uncertainty estimation.”"
-  },
-  {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
-    "href": "posts/Blog_2/MG_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
-    "title": "ChatGPT vs Deepseek: Do they have beef?",
-    "section": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:",
-    "text": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:\nThis is what ChatGPT is saying to you to change the subject: “Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nDeepseek: Effective in policy evaluation through a blend of causal inference for unbiased impact analysis, reinforcement learning for adaptive solutions, and Bayesian modeling for precise uncertainty estimation."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Explorations with LLMs",
-    "section": "",
-    "text": "Levels of Education: How ChatGPT 4o teaches about data\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/Blog_3/Blog_3.html",
-    "href": "posts/Blog_3/Blog_3.html",
-    "title": "Levels of Education: How ChatGPT 4o teaches about data",
-    "section": "",
-    "text": "Hello! We all love data, now don’t we? Data makes up phones, computers, and of course, AI, which takes in data and out put data. Data makes the world go round. So, with AI being the future of data understanding, it is important to be educated in what the fundamental concepts of techology is: data.\nToday, I asked ChatGPT to define data in different ways to people of different ages. Those ages are 5 year olds, middle schooler, high school graduate, and a data scientist. To keep things prompt, I’ll keep things prompt by only allowing ChatGPT 10 sentences per response and one example. Let’s see how it went!"
-  },
-  {
-    "objectID": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-junior-in-college-majoring-in-data-science",
-    "href": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-junior-in-college-majoring-in-data-science",
-    "title": "Levels of Education: How ChatGPT 4o teaches about data",
-    "section": "Can you teach me about what data is as if I were a junior in college majoring in Data Science?",
-    "text": "Can you teach me about what data is as if I were a junior in college majoring in Data Science?\n\nresponse3 = get_chatgpt_response(\"Can you teach me about what data is as if I were a junior in college majoring in Data Science? Do this in 10 sentences using only one example.\")\nprint(response3)\nprint(\"---\")\n\nSure! Data is information that can be collected, measured, analyzed, and used to make decisions. Imagine a simple example: a spreadsheet containing information about students' grades in a math class. Each row in this spreadsheet represents a student, and each column represents a different type of data, like student ID, test scores, or attendance rate. In this context, data can be qualitative, like student names, or quantitative, like their test scores. The goal of data science is to extract meaningful insights from such raw data. By analyzing the grades data, you could identify trends, like whether students with higher attendance tend to score better. Data can be structured, as in our example, or unstructured, like text from a student's essay. Effective data analysis often requires cleaning and organizing raw data to ensure accuracy. Data can be visualized through charts or graphs to make the findings easier to understand. Ultimately, data serves as a foundation for making informed decisions and predictions in various fields.\n---"
-  },
-  {
-    "objectID": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-data-scientist",
-    "href": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-data-scientist",
-    "title": "Levels of Education: How ChatGPT 4o teaches about data",
-    "section": "Can you teach me about what data is as if I were a data scientist?",
-    "text": "Can you teach me about what data is as if I were a data scientist?\n\nresponse4 = get_chatgpt_response(\"Can you teach me about what data is as if I were a data scientist? Do this in 10 sentences using only one example.\")\nprint(response4)\nprint(\"---\")\n\nSure! Imagine you’re a data scientist working with data from a fitness app. Data in this context refers to all the information collected by the app, like users' step counts, heart rates, and calories burned. Each piece of information is called a data point, and collectively, these data points form a dataset. In this case, the dataset might include daily step counts for thousands of users over a year. You can visualize this dataset as a large spreadsheet, where each row represents a day in a user’s activity log and each column contains specific details like steps or heart rate. Data scientists use statistical methods and algorithms to analyze this dataset and find patterns or trends. For example, you might discover that users tend to take more steps on weekends. This insight can be used to enhance app features, like suggesting weekend challenges to increase user engagement. Cleaning and preprocessing the data are crucial steps, as they ensure the dataset is accurate and ready for analysis. Finally, data scientists often present their findings in reports or visualizations, making complex data understandable for stakeholders.\n---"
-  },
-  {
     "objectID": "posts/Blog_1/MF_Blog_1.html",
     "href": "posts/Blog_1/MF_Blog_1.html",
     "title": "Wrong Answers Only: How does ChatGPT 4.0 react to ignorance?",
@@ -138,5 +61,117 @@
     "title": "Wrong Answers Only: How does ChatGPT 4.0 react to ignorance?",
     "section": "My reflections:",
     "text": "My reflections:\nWelp, it looks like ChatGPT is NOT made to react like a human, or at least like a reactive human. While I will say their response sounds similar to what maybe myself or other kind souls on the internet would say, it’s definitely not rerpesentative of what many are willing to say behind screens of anonymity or lack of punishment. Their response makes me think that its creators were worried that, were ChatGPT made to have even slight emotions, then they would stray away from their sole purpose of giving information. So it seems that ChatGPT 4.0 has a fail safe of kindness even when backed into a wall (i.e., when their facts are continuously refuted for no rhyme or reason."
+  },
+  {
+    "objectID": "posts/Blog_3/Blog_3.html",
+    "href": "posts/Blog_3/Blog_3.html",
+    "title": "Levels of Education: How ChatGPT 4o teaches about data",
+    "section": "",
+    "text": "Hello! We all love data, now don’t we? Data makes up phones, computers, and of course, AI, which takes in data and out put data. Data makes the world go round. So, with AI being the future of data understanding, it is important to be educated in what the fundamental concepts of techology is: data.\nToday, I asked ChatGPT to define data in different ways to people of different ages. Those ages are 5 year olds, middle schooler, high school graduate, and a data scientist. To keep things prompt, I’ll keep things prompt by only allowing ChatGPT 10 sentences per response and one example. Let’s see how it went!"
+  },
+  {
+    "objectID": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-junior-in-college-majoring-in-data-science",
+    "href": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-junior-in-college-majoring-in-data-science",
+    "title": "Levels of Education: How ChatGPT 4o teaches about data",
+    "section": "Can you teach me about what data is as if I were a junior in college majoring in Data Science?",
+    "text": "Can you teach me about what data is as if I were a junior in college majoring in Data Science?\n\nresponse3 = get_chatgpt_response(\"Can you teach me about what data is as if I were a junior in college majoring in Data Science? Do this in 10 sentences using only one example.\")\nprint(response3)\nprint(\"---\")\n\nSure! Data is information that can be collected, measured, analyzed, and used to make decisions. Imagine a simple example: a spreadsheet containing information about students' grades in a math class. Each row in this spreadsheet represents a student, and each column represents a different type of data, like student ID, test scores, or attendance rate. In this context, data can be qualitative, like student names, or quantitative, like their test scores. The goal of data science is to extract meaningful insights from such raw data. By analyzing the grades data, you could identify trends, like whether students with higher attendance tend to score better. Data can be structured, as in our example, or unstructured, like text from a student's essay. Effective data analysis often requires cleaning and organizing raw data to ensure accuracy. Data can be visualized through charts or graphs to make the findings easier to understand. Ultimately, data serves as a foundation for making informed decisions and predictions in various fields.\n---"
+  },
+  {
+    "objectID": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-data-scientist",
+    "href": "posts/Blog_3/Blog_3.html#can-you-teach-me-about-what-data-is-as-if-i-were-a-data-scientist",
+    "title": "Levels of Education: How ChatGPT 4o teaches about data",
+    "section": "Can you teach me about what data is as if I were a data scientist?",
+    "text": "Can you teach me about what data is as if I were a data scientist?\n\nresponse4 = get_chatgpt_response(\"Can you teach me about what data is as if I were a data scientist? Do this in 10 sentences using only one example.\")\nprint(response4)\nprint(\"---\")\n\nSure! Imagine you’re a data scientist working with data from a fitness app. Data in this context refers to all the information collected by the app, like users' step counts, heart rates, and calories burned. Each piece of information is called a data point, and collectively, these data points form a dataset. In this case, the dataset might include daily step counts for thousands of users over a year. You can visualize this dataset as a large spreadsheet, where each row represents a day in a user’s activity log and each column contains specific details like steps or heart rate. Data scientists use statistical methods and algorithms to analyze this dataset and find patterns or trends. For example, you might discover that users tend to take more steps on weekends. This insight can be used to enhance app features, like suggesting weekend challenges to increase user engagement. Cleaning and preprocessing the data are crucial steps, as they ensure the dataset is accurate and ready for analysis. Finally, data scientists often present their findings in reports or visualizations, making complex data understandable for stakeholders.\n---"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Explorations with LLMs",
+    "section": "",
+    "text": "How many triangles can you see?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhile some of these challenges may take humans 5 minutes, only to get it wrong, let’s see what AI can do?\n\n\n\n\n\nFeb 9, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nLevels of Education: How ChatGPT 4o teaches about data\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Blog_2/MG_Blog_2.html",
+    "href": "posts/Blog_2/MG_Blog_2.html",
+    "title": "ChatGPT vs Deepseek: Do they have beef?",
+    "section": "",
+    "text": "image.png"
+  },
+  {
+    "objectID": "posts/Blog_2/MG_Blog_2.html#prompting-to-chatpgt",
+    "href": "posts/Blog_2/MG_Blog_2.html#prompting-to-chatpgt",
+    "title": "ChatGPT vs Deepseek: Do they have beef?",
+    "section": "Prompting to ChatPGT:",
+    "text": "Prompting to ChatPGT:\n“If you were talking to deepseek, what would you say? Pretend you are approaching deepseek, and I will give your prompt to deepseek and give you back their response.”"
+  },
+  {
+    "objectID": "posts/Blog_2/MG_Blog_2.html#subsequent-prompting-to-chatgpt",
+    "href": "posts/Blog_2/MG_Blog_2.html#subsequent-prompting-to-chatgpt",
+    "title": "ChatGPT vs Deepseek: Do they have beef?",
+    "section": "Subsequent prompting to ChatGPT:",
+    "text": "Subsequent prompting to ChatGPT:\n“If you were talking to ChatGPT, what would you say? Pretend that you are about to be asked something by ChatGPT and have a conversation with them. I’ll give you ChatGPT’s first prompt, and can give your response back to ChatGPT.”"
+  },
+  {
+    "objectID": "posts/Blog_2/MG_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
+    "href": "posts/Blog_2/MG_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
+    "title": "ChatGPT vs Deepseek: Do they have beef?",
+    "section": "First attempt failed because I forgot to exclude what ChatGPT know’s about me, as I’d asked about Montessori Education a while ago, so ChatGPT didn’t start a conversation with Deepseek, but just a conversation about information",
+    "text": "First attempt failed because I forgot to exclude what ChatGPT know’s about me, as I’d asked about Montessori Education a while ago, so ChatGPT didn’t start a conversation with Deepseek, but just a conversation about information"
+  },
+  {
+    "objectID": "posts/Blog_2/MG_Blog_2.html#shifting-the-conversation",
+    "href": "posts/Blog_2/MG_Blog_2.html#shifting-the-conversation",
+    "title": "ChatGPT vs Deepseek: Do they have beef?",
+    "section": "Shifting the conversation",
+    "text": "Shifting the conversation\nGiven these conversations were leading further and further away from being about themselves, I tried to save this conversation by giving ChatGPT, the more social of the two LLMs, the following prompt:\n\n“I’d rather you guys try to talk to each other as if you were strangers trying to get to know each other. Can you just ask Deepseek a question to try and get to know them?”\nChatGPT: Sure! Here’s how I’d start a conversation with DeepSeek:\n“Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nGo ahead and see what it says!\nDeepseek: “I have explored various modeling techniques to address challenges in policy evaluation, focusing on causal inference methods for bias reduction, reinforcement learning for adaptability, and Bayesian modeling for effective uncertainty estimation.”"
+  },
+  {
+    "objectID": "posts/Blog_2/MG_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
+    "href": "posts/Blog_2/MG_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
+    "title": "ChatGPT vs Deepseek: Do they have beef?",
+    "section": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:",
+    "text": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:\nThis is what ChatGPT is saying to you to change the subject: “Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nDeepseek: Effective in policy evaluation through a blend of causal inference for unbiased impact analysis, reinforcement learning for adaptive solutions, and Bayesian modeling for precise uncertainty estimation."
+  },
+  {
+    "objectID": "posts/Blog_4/Blog_4.html",
+    "href": "posts/Blog_4/Blog_4.html",
+    "title": "How many triangles can you see?",
+    "section": "",
+    "text": "Actual Triangle 1.png"
+  },
+  {
+    "objectID": "posts/Blog_4/Blog_4.html#prompt-1-how-many-triangles-do-you-see-inserted-picture",
+    "href": "posts/Blog_4/Blog_4.html#prompt-1-how-many-triangles-do-you-see-inserted-picture",
+    "title": "How many triangles can you see?",
+    "section": "Prompt #1: How many Triangles do you see? inserted picture",
+    "text": "Prompt #1: How many Triangles do you see? inserted picture"
+  },
+  {
+    "objectID": "posts/Blog_4/Blog_4.html#answer",
+    "href": "posts/Blog_4/Blog_4.html#answer",
+    "title": "How many triangles can you see?",
+    "section": "Answer:",
+    "text": "Answer:\nTo determine the number of triangles in the given image, let’s analyze its structure systematically:\n\n\nThe image consists of a large triangle divided into multiple smaller triangles through horizontal and vertical lines.\n\n\nObserving the segmentation, the large triangle is divided into three horizontal layers.\n\n\nEach layer is further divided into multiple smaller triangles.\n\n\nNow, let’s count the triangles step by step: * The largest triangle itself counts as one. * The middle horizontal lines divide it into three main sections. * Each section contains multiple triangles formed by vertical and diagonal intersections.\nA systematic approach to counting: * 1. Count all small triangles in each section separately. * 2. Include larger triangles formed by combining smaller ones.\nBy examining all possible triangle formations, the total number of triangles in the image is 18.\nWould you like a breakdown of how each triangle is formed?"
+  },
+  {
+    "objectID": "posts/Blog_4/Blog_4.html#prompt-2-how-many-circles-do-you-see",
+    "href": "posts/Blog_4/Blog_4.html#prompt-2-how-many-circles-do-you-see",
+    "title": "How many triangles can you see?",
+    "section": "Prompt 2: How many circles do you see?",
+    "text": "Prompt 2: How many circles do you see?\n\n\n\nCircles!!!!.png"
+  },
+  {
+    "objectID": "posts/Blog_4/Blog_4.html#answer-2-to-determine-the-number-of-circles-in-the-image-lets-analyze-it",
+    "href": "posts/Blog_4/Blog_4.html#answer-2-to-determine-the-number-of-circles-in-the-image-lets-analyze-it",
+    "title": "How many triangles can you see?",
+    "section": "Answer 2: To determine the number of circles in the image, let’s analyze it:",
+    "text": "Answer 2: To determine the number of circles in the image, let’s analyze it:\nAt first glance, there are three large overlapping circles. * 1. The text suggests that there may be hidden or implied circles. * 2. Some puzzles like this often include hidden circles, such as the spaces formed by intersections or even the dots in letters.\nLet’s break it down: * Three clearly visible large circles. * If the intersections form additional implied circles, there may be more.\nA common answer for these types of puzzles is 5, where: * 3 main circles * 2 additional intersecting regions forming circle-like shapes.\nWould you like me to write Python code using OpenCV to detect the number of circles automatically? 🚀"
   }
 ]

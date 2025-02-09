@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Michael Fuentes">
+<meta name="dcterms.date" content="2025-02-09">
+<meta name="description" content="While some of these challenges may take humans 5 minutes, only to get it wrong, let’s see what AI can do?">
 
-<title>My Explorations with LLMs – Michael Fuentes’ Blog</title>
+<title>How many triangles can you see? – Michael Fuentes’ Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5027bf1c1f92ac6615724d89c8213d6a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5027bf1c1f92ac6615724d89c8213d6a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Michael Fuentes’ Blog</span>
     </a>
   </div>
@@ -163,236 +106,101 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Explorations with LLMs</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">How many triangles can you see?</h1>
+                  <div>
+        <div class="description">
+          While some of these challenges may take humans 5 minutes, only to get it wrong, let’s see what AI can do?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">prompting</div>
+                <div class="quarto-category">logic</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Michael Fuentes </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 9, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(5)</span></div><div class="category" data-category="bG9naWM=">logic <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cHJvbXB0aW5n">prompting <span class="quarto-category-count">(5)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_4_files/figure-html/ed5da782-9354-4e3b-b2ad-80e6be7d71f4-1-c15794c3-3c8a-4ed2-ae72-05e6b181a6f6.png" class="img-fluid figure-img"></p>
+<figcaption>Actual Triangle 1.png</figcaption>
+</figure>
+</div>
+<section id="prompt-1-how-many-triangles-do-you-see-inserted-picture" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-1-how-many-triangles-do-you-see-inserted-picture">Prompt #1: How many Triangles do you see? <em>inserted picture</em></h2>
+</section>
+<section id="answer" class="level2">
+<h2 class="anchored" data-anchor-id="answer">Answer:</h2>
+<p><strong>To determine the number of triangles in the given image, let’s analyze its structure systematically:</strong></p>
+<ul>
+<li><ol type="1">
+<li>The image consists of a large triangle divided into multiple smaller triangles through horizontal and vertical lines.</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Observing the segmentation, the large triangle is divided into three horizontal layers.</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Each layer is further divided into multiple smaller triangles.</li>
+</ol></li>
+</ul>
+<p><strong>Now, let’s count the triangles step by step:</strong> * The largest triangle itself counts as one. * The middle horizontal lines divide it into three main sections. * Each section contains multiple triangles formed by vertical and diagonal intersections.</p>
+<p><strong>A systematic approach to counting:</strong> * 1. Count all small triangles in each section separately. * 2. Include larger triangles formed by combining smaller ones.</p>
+<p><strong>By examining all possible triangle formations, the total number of triangles in the image is 18.</strong></p>
+<p>Would you like a breakdown of how each triangle is formed?</p>
+</section>
+<section id="prompt-2-how-many-circles-do-you-see" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-2-how-many-circles-do-you-see">Prompt 2: How many circles do you see?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_4_files/figure-html/bbf392f9-6f74-49d0-95d8-d77986d0d7a9-1-f9f0edc7-2a26-4a33-8eee-481503104fe1.png" class="img-fluid figure-img"></p>
+<figcaption>Circles!!!!.png</figcaption>
+</figure>
+</div>
+</section>
+<section id="answer-2-to-determine-the-number-of-circles-in-the-image-lets-analyze-it" class="level2">
+<h2 class="anchored" data-anchor-id="answer-2-to-determine-the-number-of-circles-in-the-image-lets-analyze-it">Answer 2: To determine the number of circles in the image, let’s analyze it:</h2>
+<p>At first glance, there are three large overlapping circles. * 1. The text suggests that there may be hidden or implied circles. * 2. Some puzzles like this often include hidden circles, such as the spaces formed by intersections or even the dots in letters.</p>
+<p>Let’s break it down: * Three clearly visible large circles. * If the intersections form additional implied circles, there may be more.</p>
+<p>A common answer for these types of puzzles is 5, where: * 3 main circles * 2 additional intersecting regions forming circle-like shapes.</p>
+<p><strong>Would you like me to write Python code using OpenCV to detect the number of circles automatically? 🚀</strong></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1739059200000" data-listing-file-modified-sort="1739083412601" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
-<div class="thumbnail">
-<p><a href="./posts/Blog_4/Blog_4.html" class="no-external"></a></p><a href="./posts/Blog_4/Blog_4.html" class="no-external">
-<p class="card-img-top"><img src="posts/Blog_4/Blog_4_files/figure-html/ed5da782-9354-4e3b-b2ad-80e6be7d71f4-1-c15794c3-3c8a-4ed2-ae72-05e6b181a6f6.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Blog_4/Blog_4.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Blog_4/Blog_4.html" class="no-external">How many triangles can you see?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Blog_4/Blog_4.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Blog_4/Blog_4.html" class="no-external">While some of these challenges may take humans 5 minutes, only to get it wrong, let’s see what AI can do?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Blog_4/Blog_4.html" class="no-external">
-<div class="listing-date">
-Feb 9, 2025
-</div>
-<div class="listing-author">
-Michael Fuentes
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1738713600000" data-listing-file-modified-sort="1739083412601" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
-<div class="thumbnail">
-<p><a href="./posts/Blog_3/Blog_3.html" class="no-external"></a></p><a href="./posts/Blog_3/Blog_3.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/Blog_3/Blog_3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Blog_3/Blog_3.html" class="no-external">Levels of Education: How ChatGPT 4o teaches about data</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Blog_3/Blog_3.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Blog_3/Blog_3.html" class="no-external">Learning how to call APIs directly to Python</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Blog_3/Blog_3.html" class="no-external">
-<div class="listing-date">
-Feb 5, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1738281600000" data-listing-file-modified-sort="1739083412601" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2228">
-<div class="thumbnail">
-<p><a href="./posts/Blog_2/MG_Blog_2.html" class="no-external"></a></p><a href="./posts/Blog_2/MG_Blog_2.html" class="no-external">
-<p class="card-img-top"><img src="posts/Blog_2/MG_Blog_2_files/figure-html/3742b511-9cc1-4873-8839-72e49498c841-1-fe997a04-b2da-45a8-80b8-b7173782d8bf.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Blog_2/MG_Blog_2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Blog_2/MG_Blog_2.html" class="no-external">ChatGPT vs Deepseek: Do they have beef?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Blog_2/MG_Blog_2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Blog_2/MG_Blog_2.html" class="no-external">What would a conversation between ChatGPT and Deepseek look like?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Blog_2/MG_Blog_2.html" class="no-external">
-<div class="listing-date">
-Jan 31, 2025
-</div>
-<div class="listing-author">
-Michael Fuentes
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1738195200000" data-listing-file-modified-sort="1739083412600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2200">
-<div class="thumbnail">
-<p><a href="./posts/Blog_1/MF_Blog_1.html" class="no-external"></a></p><a href="./posts/Blog_1/MF_Blog_1.html" class="no-external">
-<p class="card-img-top"><img src="posts/Blog_1/MF_Blog_1_files/figure-html/7dc34c61-e1ab-44ab-8208-88ababfc26e7-1-c77bf110-c196-499e-ae88-7c5ae6389c3e.png" alt="image.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Blog_1/MF_Blog_1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Blog_1/MF_Blog_1.html" class="no-external">Wrong Answers Only: How does ChatGPT 4.0 react to ignorance?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Blog_1/MF_Blog_1.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Blog_1/MF_Blog_1.html" class="no-external">Today I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Blog_1/MF_Blog_1.html" class="no-external">
-<div class="listing-date">
-Jan 30, 2025
-</div>
-<div class="listing-author">
-Michael Fuentes
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1739083412598" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/000_test_post/index.html" class="no-external"></a></p><a href="./posts/000_test_post/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/000_test_post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/000_test_post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/000_test_post/index.html" class="no-external">An example post from a Jupyter notebook</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
