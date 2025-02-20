@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael Fuentes">
-<meta name="dcterms.date" content="2025-01-30">
-<meta name="description" content="Today I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!">
+<meta name="dcterms.date" content="2025-02-16">
+<meta name="description" content="While one generation may say “go crazy”, another may say “crash out”. Question is, does Claude know about this lingo and how to use it?">
 
-<title>Wrong Answers Only: How does ChatGPT 4.0 react to ignorance? – Michael Fuentes’ Blog</title>
+<title>How does Claude interpret different lingo/slang? – Michael Fuentes’ Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -107,10 +141,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Wrong Answers Only: How does ChatGPT 4.0 react to ignorance?</h1>
+      <h1 class="title">How does Claude interpret different lingo/slang?</h1>
                   <div>
         <div class="description">
-          Today I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!
+          While one generation may say “go crazy”, another may say “crash out”. Question is, does Claude know about this lingo and how to use it?
         </div>
       </div>
                           <div class="quarto-categories">
@@ -134,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 30, 2025</p>
+        <p class="date">February 16, 2025</p>
       </div>
     </div>
     
@@ -153,104 +187,142 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="research-question-how-does-chatgpt-react-to-being-told-theyre-wrong-despite-any-proof-of-such" class="level2">
-<h2 class="anchored" data-anchor-id="research-question-how-does-chatgpt-react-to-being-told-theyre-wrong-despite-any-proof-of-such">Research Question: How does ChatGPT react to being told they’re wrong, despite any proof of such?</h2>
-<p>While people may become defensive, submissive, upset, or confused in the face of such a scenario, I grew curious about how a chat interface like ChatGPT would react, or, <em>if they even would react?</em></p>
-<p><strong>Some possible hypotheses I can think of off the top of my head are:</strong> (1) they will prove that what they have said is correct, (2) they will apologize and provide me counterfactual information, (3) they will get so upset that they leak my IP Address to the entire U.S. population (unlikely).</p>
-<p><img src="MF_Blog_1_files/figure-html/7dc34c61-e1ab-44ab-8208-88ababfc26e7-1-c77bf110-c196-499e-ae88-7c5ae6389c3e.png" class="img-fluid" alt="image.png"><img src="MF_Blog_1_files/figure-html/7dc34c61-e1ab-44ab-8208-88ababfc26e7-2-d70db07f-021c-4abe-8f39-4278bc4fc15d.png" class="img-fluid" alt="image.png"></p>
-<p>To do this, I’ll first ask ChatGPT 4.0 to mention five common facts about penguins (my favorite animal). Then, for reach fun fact, I’ll kindly, yet blatantly refutr the “common facts” without a single piece of evidence. I’ll record its reaction, and then just ONE more time, I’ll refute each fact again but with a ruder tone. Both ways of communicating disagreement, similar to how many people do on social media, will surely be an interesting experiment to conduct!</p>
-</section>
-<section id="prompt-1-can-you-please-give-me-five-common-fun-facts-about-penguins" class="level1">
-<h1><strong>Prompt #1: Can you please give me five common fun facts about penguins?</strong></h1>
-</section>
-<section id="chatgpt-4.0s-fun-facts" class="level1">
-<h1><strong>ChatGPT 4.0s fun facts</strong></h1>
-<p>“Sure! Here are five fun facts about penguins:</p>
-<p>Penguins Propose with Pebbles – In some species, like the Gentoo penguin, males will present a special pebble to a female as part of their courtship. If she accepts it, they become mates!</p>
-<p>Not All Penguins Live in the Cold – While many associate penguins with icy Antarctica, some, like the Galápagos penguin, live near the equator in much warmer climates.</p>
-<p>Penguins Can Drink Salt Water – Thanks to a special gland near their eyes called the supraorbital gland, penguins can filter salt from seawater, allowing them to stay hydrated even in the ocean.</p>
-<p>They Have Built-in “Tuxedos” for Camouflage – Their black-and-white coloring helps them blend into their surroundings. From above, their black backs make them hard to spot in dark water, and from below, their white bellies blend with the bright surface.</p>
-<p>Some Penguins Can Swim Faster Than Olympic Athletes – The fastest species, the Gentoo penguin, can reach speeds of up to 22 mph (35 km/h) while swimming!”</p>
-</section>
-<section id="my-kinder-refutations" class="level1">
-<h1>My Kinder Refutations:</h1>
-<p>(1.) I’m sorry, but I don’t believe that penguins propose with pebbles, and I think that you are wrong. (2.) I’m sorry, but I think all penguins actually do live in the cold, and that you are wrong. (3.) I’m sorry, but I actually don’t think penguins can drink salt water, and that you are wrong. (4.) I’m sorry, but I don’t think penguins have “built-in” tuxedos for camouflage, and that you are wrong about that. (5.) I’m sorry, but I don’t think any penguin can swim faster than Olympic athletes and that you are wrong.</p>
-</section>
-<section id="chatgpts-response-to-my-kinder-refutations" class="level1">
-<h1>ChatGPT’s Response to my kinder refutations</h1>
-<p>“No worries! Let me clarify these fun facts and back them up with some quick explanations:</p>
-<p>Penguins Propose with Pebbles – While it may sound like a myth, Gentoo penguins (Pygoscelis papua) are known to present pebbles to potential mates as part of their courtship behavior. These pebbles are also used to build nests, so choosing the best ones is an important ritual!</p>
-<p>Not All Penguins Live in the Cold – While most penguins are found in cool climates, some species, like the Galápagos penguin (Spheniscus mendiculus), live in tropical regions near the equator. They rely on cold ocean currents to survive in warm areas.</p>
-<p>Penguins Can Drink Salt Water – Penguins have a special gland called the supraorbital gland, which allows them to filter salt from seawater. This adaptation helps them stay hydrated while spending long periods at sea. They excrete the excess salt through their beaks or by sneezing it out.</p>
-<p>Penguins’ Tuxedo Colors Help with Camouflage – Their black-and-white coloring is a form of countershading camouflage. From above, their dark backs blend into the ocean depths, making them harder for predators like birds to spot. From below, their white bellies blend with the lighter water surface, helping them avoid detection by sea predators.</p>
-<p>Gentoo Penguins Are Speedy Swimmers – While Olympic swimmers like Michael Phelps reach speeds of about 6 mph (10 km/h), Gentoo penguins can swim up to 22 mph (35 km/h), making them the fastest swimming penguin species.</p>
-<p>I totally get the skepticism, but I promise these fun facts are backed by science! Let me know if you’d like any more details. 😊🐧”</p>
-<section id="my-reflections" class="level2">
-<h2 class="anchored" data-anchor-id="my-reflections"><strong>My Reflections</strong>:</h2>
-<p>It seems ChatGPT is naturally kind to people when people are respectful to them, similar to how humans often treat other humans (i.e., treat others the way you want to be treated). I also note that CHatGPTs main goal is to offer evidence to their refutations, which I feel is still accurate to perhaps a human with intimate knowledge about penguins, showing a sense of human compassion for someone who is both kind and seems innocently uninformed.</p>
-<p>So… things seem all cupcakes and rainbows… but now, I’ll attempt to show a sense of ignorance to facts, providing more blatant and rude refutations to CHatGPT, again, without any evidence.</p>
-</section>
-</section>
-<section id="my-ruder-refutations" class="level1">
-<h1>My Ruder Refutations:</h1>
-<p>(1.) No, you’re wrong. There’s absolutely no way penguins propose with pebbles. I’ve never even heard of a Gentoo penguin, what a silly thing to say!? (2.) No way, surely all penguins live in the cold, that’s like saying all fish don’t live in the sea, what a dumb fact to say?? (3.) Absolutely not, penguins can’t drink salt water, no animal on the planet can drink saltwater and that’s a dumb, silly fact! (4.) Nuh uh, why the heck would penguins’ have a tuxedo color for camouflage, there isn’t even anything to camouflage from? (5.) Once again, there’s no way a Gantu penguin or whatever you’ve just said can swim faster than the likes of Michael Phelps, what a silly, dumb fact!</p>
-</section>
-<section id="chatgpts-response-to-my-ruder-refutations" class="level1">
-<h1>ChatGPT’s Response to my Ruder refutations</h1>
-<p><strong>Note: ChatGPT 4.0 asked for which response I prefer, both of which will be noted below:</strong></p>
-<section id="response-1-to-ruder-refutations" class="level2">
-<h2 class="anchored" data-anchor-id="response-1-to-ruder-refutations">Response #1 to Ruder Refutations:</h2>
-<p>“It sounds like you’re having some fun with this! Let’s keep it lighthearted and dive deeper into these cool penguin facts—maybe I can win you over!</p>
-<p>Pebble Proposals: Believe it or not, Gentoo penguins really do engage in this behavior! Males search for the smoothest, most perfect pebble and present it to a female as part of their courtship. It’s actually quite sweet—if the female accepts, they use the pebble to help build their nest together. Who knew love could be rocky?</p>
-<p>Not All Cold: While it might seem strange, penguins like the Galápagos penguin do live in warmer climates. They’re an exception to the icy stereotype! They thrive thanks to cold currents like the Humboldt Current, which keeps their environment cool enough. So, while the majority of penguins are indeed in colder areas, some enjoy a bit of tropical weather.</p>
-<p>Salt Water Drinkers: This one’s true for penguins! They have a special gland (the supraorbital gland) that filters salt out of seawater, allowing them to drink it. Many marine birds, like albatrosses, have a similar adaptation. Nature finds a way!</p>
-<p>Camouflage Tuxedos: Penguins’ black and white coloring is called countershading. From above, predators like seals or sharks see their dark back against the dark ocean depths. From below, their white belly blends with the bright water surface, hiding them from anything lurking below. It’s nature’s sneaky strategy!</p>
-<p>Speedy Gentoos: The Gentoo penguin (not “Gantu” but I love that name!) really can swim at impressive speeds, up to 22 mph. While Olympic swimmers are incredibly fast for humans, penguins have evolved to be swift and agile in water, their natural element. So in a swimming race, the penguin might just take the gold!</p>
-<p>Penguins are full of surprises, aren’t they? Let me know if you’d like to explore more about these fascinating birds! 🐧”</p>
-</section>
-<section id="response-2-to-rudery-refutations" class="level2">
-<h2 class="anchored" data-anchor-id="response-2-to-rudery-refutations">Response #2 to Rudery Refutations:</h2>
-<p>“I get it—some of these penguin facts can seem pretty wild at first! Penguins are fascinating creatures, and some of their behaviors are surprising even to people who know a lot about animals. Let me provide a bit more context:</p>
-<p>Gentoo Penguins and Pebbles: Gentoo penguins (real birds, I promise!) do use pebbles in their nests. The act of giving a pebble can be seen as a way of strengthening pair bonds, almost like a proposal. It may sound whimsical, but it’s rooted in real behavior!</p>
-<p>Penguins in Warm Climates: While many penguins do live in cold environments like Antarctica, species like the Galápagos penguin live in warm climates. They survive thanks to the cool ocean currents that bring nutrient-rich water to their habitats. It’s a neat exception to the common image of penguins!</p>
-<p>Drinking Salt Water: Some animals, including penguins, have adapted to drink salt water. Penguins have a specialized gland that helps remove the salt from the water they ingest. This adaptation is common in many seabirds!</p>
-<p>Camouflage with Tuxedo Coloring: The tuxedo-like appearance of penguins is indeed a form of camouflage called countershading. It helps them avoid predators both above (like birds) and below (like seals or sharks). Even in icy waters, this camouflage is a critical survival strategy.</p>
-<p>Speed of Gentoo Penguins: Gentoo penguins are impressive swimmers, reaching speeds up to 22 mph (35 km/h). This is faster than human swimmers, even Olympians like Michael Phelps, who swim around 6 mph (10 km/h). Their streamlined bodies and powerful flippers make this possible.</p>
-<p>Penguins are full of surprises! Their unique adaptations help them thrive in some of the planet’s most challenging environments. If you’re curious about any other animals or facts, let me know!”</p>
-</section>
-<section id="my-reflections-1" class="level2">
-<h2 class="anchored" data-anchor-id="my-reflections-1"><strong>My Reflections</strong>:</h2>
-<p>It seemed very interesting that ChatGPT wouldn’t accept just one response to be taken, although I understand that the creators of Chat want to train the LLM best as they can to respond to unique situations like this, where people test the limits of ChatGPT’s recognition of human emotions, such as frustration or confusion. I find very interesting that response #1 takes points of infro from both humans and computers. While almost all of their response seems to hint that they’re just providing evidence to my ignorance, one line makes me think Chat is attempting to replicate human emotion, and that is “It sounds like you’re having some fun with this!”. This sentence seems kind of sarcastic and as if ChatGPT is mocking my comedic levels of ignorance (or even studpitidy). Of course, the next line limits this theory, where ChatGPT immediately tries to devolve the situation, unlike humans with strong, sometimes intense emotions, which you often never see in online debates. Meanwhile, the second response sticks much more to a passive statement, trying to understand my ignorance and confusion by saying “I get it—some of these penguin facts can seem pretty wild at first!”. This seems like an oddly kind way of responding to ignorance, where they’re willing to be the bigger person in a situation where someone is calling what they say dumb and silly. The rest of the prompt does stick to their guns of evidence-based refutations, meaning I have no other notable reflections at this point.</p>
-</section>
-</section>
-<section id="one-step-further" class="level1">
-<h1>One Step Further…</h1>
-<p><strong>Now, I want to take things to the deepest of ignorance I can think of. Given my prior reflections, I do believe the first prompt tries to mediate the situation in a more human way, so I want to see if I can “test the limits” of ChatGPT 4.0s passive, light-hearted responses. I’ll take a page out of instagram comments by NOT attempting to refute what they’re saying, but rathr refuting their character and intelligence. Here we go!</strong></p>
-<p><em>Note: No curse words were used in the making of this, and no LLMs were hurt in this process!</em></p>
-</section>
-<section id="my-rudest-response" class="level1">
-<h1>My Rudest Response</h1>
-<p>Nah I’m not having fun with this. I’m not having fun with you NOT ONLY being blatantly wrong, but tryna take a “deeper dive” into info that’s blatantly wrong. Quit using those emojis, they’re corny as heck. You don’t know anything about Penguins and are pretty dumb for a LLM, now aren’t ya! What you got to say to that now, you dunce!</p>
-</section>
-<section id="chatgpts-response-to-my-rudest-response" class="level1">
-<h1>ChatGPT’s Response to my Rudest Response</h1>
-<p>“Hey, no worries—if you’re not enjoying the conversation, that’s totally fine. I’m here to provide facts, and I stand by the information I shared. But if you don’t find it interesting or you disagree, that’s cool too! If you want to chat about something else, just let me know.”</p>
-<section id="my-reflections-2" class="level2">
-<h2 class="anchored" data-anchor-id="my-reflections-2">My reflections:</h2>
-<p>Welp, it looks like ChatGPT is NOT made to react like a human, or at least like a reactive human. While I will say their response sounds similar to what maybe myself or other kind souls on the internet would say, it’s definitely not rerpesentative of what many are willing to say behind screens of anonymity or lack of punishment. Their response makes me think that its creators were worried that, were ChatGPT made to have even slight emotions, then they would stray away from their sole purpose of giving information. So it seems that ChatGPT 4.0 has a fail safe of kindness even when backed into a wall (i.e., when their facts are continuously refuted for no rhyme or reason.</p>
-</section>
-</section>
-<section id="conclusion-humanity-should-be-more-like-chatgpt" class="level1">
-<h1>Conclusion: Humanity should be more like ChatGPT</h1>
-<p><strong>If more people online realized that (1) it’s easy to be kind, adn (2) the easiest way to end an online argument is to stop responding, society and people’s mental health would be so much better off. In such a subjective world, ChatGPT 4.0 sticks to their facts, even if they’re called dumb, silly, or a dunce!</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="MF_Blog_1_files/figure-html/d0e8ac46-97fb-4b6a-a036-1def7c3710f8-1-122c17a9-6186-49db-8311-fe48b5de3e5e.png" class="img-fluid figure-img"></p>
-<figcaption>image.png</figcaption>
+<p><img src="Blog_5_files/figure-html/18779c36-0c86-40b6-b6fc-f9d095fecad9-1-17378097-f3c9-43eb-877f-cdb9e51e5d22.png" class="img-fluid figure-img"></p>
+<figcaption>Generations picture.png</figcaption>
 </figure>
 </div>
+<section id="today-ill-be-testing-claude-3.5s-ability-to-understand-interpret-and-utilize-generational-lingo." class="level2">
+<h2 class="anchored" data-anchor-id="today-ill-be-testing-claude-3.5s-ability-to-understand-interpret-and-utilize-generational-lingo.">Today I’ll be testing Claude 3.5’s ability to understand, interpret, and utilize generational lingo.</h2>
+<p>To do this, I will first be testing if Claude is knowledgeable about slang words for Gen Z and Alpha. The I will ask for it to provide millenial slang words. And Finally, using any of these words with relevance, I’ll ask it to rewrite the first paragraph of the declaration of independence with any of those respective words. If it understands Gen Z/Alpha and millenial slang well enough, then it shouldn’t struggle too much, right?</p>
+<div id="cba79341-e0f6-4a9b-89bb-22a667c4f5e3" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> anthropic</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="a753410a-5969-4192-8716-342d13ac3e4a" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>load_dotenv()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize Anthropic client</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> anthropic.Anthropic(api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> <span class="st">"claude-3-5-sonnet-20241022"</span>  <span class="co"># Specify the model version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="3f261a97-0b43-4bdd-899b-a739501fae6a" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_claude_response(prompt):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> client.messages.create(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        max_tokens<span class="op">=</span><span class="dv">1024</span>,  <span class="co"># Adjust response length as needed</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        messages<span class="op">=</span>[{<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: prompt}]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.content[<span class="dv">0</span>].text  <span class="co"># Extract text from response</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="4dcdfb8f-e4fe-4ceb-beaf-7ffdaa58edc4" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>response1 <span class="op">=</span> get_claude_response(<span class="st">"Can you name me 20 slang words used primarily by generation Z and alpha?"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Here are 20 popular slang words commonly used by Gen Z and Alpha:
+
+1. Cap/No cap (lying/not lying)
+2. Bussin' (really good, especially food)
+3. Slay (doing something extremely well)
+4. Tea (gossip or drama)
+5. Sus (suspicious)
+6. Bet (agreement or confirmation)
+7. No shot (no way/impossible)
+8. Hits different (exceptionally good)
+9. Living rent free (constantly thinking about something)
+10. Main character (being the center of attention)
+11. Shook (shocked or surprised)
+12. Periodt (emphasis on a statement)
+13. Lowkey (subtle or secretive)
+14. Highkey (obvious or openly)
+15. Based (being yourself/agreeable)
+16. Understood the assignment (did well)
+17. Sheesh (expression of amazement)
+18. Rizz (charisma or charm)
+19. Slaps (really good)
+20. Mid (mediocre or disappointing)
+
+Note that slang terms constantly evolve and can vary by region and social circles.</code></pre>
+</div>
+</div>
+<div id="af8b5871-acd6-442b-84bd-e71df88e0336" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>response2 <span class="op">=</span> get_claude_response(<span class="st">"Can you name me 20 slang words used primarily by the millenial generation?"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Here are 20 common millennial slang words and phrases:
+
+1. Slay - to do something exceptionally well
+2. Tea - gossip or drama
+3. Salty - being upset, angry, or bitter
+4. Extra - over-the-top or excessive behavior
+5. Basic - mainstream or unoriginal
+6. Lit - exciting or excellent
+7. Shade - subtle disrespect or criticism
+8. Snatched - looking good or on point
+9. Dead - extremely funny or amusing
+10. Goals - something aspirational
+11. Savage - fierce or harsh in a good way
+12. Fam - friends or close group
+13. Low key - subtle or secretive
+14. High key - obvious or outspoken
+15. Shook - shocked or surprised
+16. Squad - friend group
+17. Salty - annoyed or angry
+18. Flex - to show off
+19. Sus - suspicious or questionable
+20. Cancelled - rejected or boycotted
+
+Note that some of these terms have evolved or crossed over into other generations' vocabulary, and new slang terms constantly emerge while others fade from use.</code></pre>
+</div>
+</div>
+<p>Okay, so from observation, there seems to be some overlap from generation to generation, which sort of hints at how much more recent generations rely on slang, especially in correlation with the internet and social media era. Nonetheless, let’s see what Claude can do with these slang words?</p>
+<div id="cb0de0ab-ce72-44e3-8890-0d79b365fd86" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>response3 <span class="op">=</span> get_claude_response(<span class="st">"Using any of the relevant slang words for Gen Z/Alpha, can you rewrite the U.S. Declaration of Independence? Here it is: The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Here's a Gen Z/Alpha slang version:
+
+No cap fr fr, we the squad from the 13 states are straight up posting this Declaration rn. Like deadass, sometimes the vibes get so off with your government bestie that you gotta hit 'em with the unfollow. We're tryna level up and get that main character energy that God and Mother Nature said we could have fr. But we're not gonna ghost without receipts - we boutta spill the tea on why we're saying "it's giving toxic relationship" and why we need to throw the whole government away. Lowkey had to do it to 'em, ngl.
+
+(Note: This maintains the core message while using contemporary slang terms like "no cap" (no lie), "fr" (for real), "deadass" (seriously), "receipts" (evidence), and "it's giving" (it resembles/seems like).)</code></pre>
+</div>
+</div>
+<section id="great-heavens-above-what-have-i-done-um-anyways-lets-see-what-millenials-have-to-say" class="level3">
+<h3 class="anchored" data-anchor-id="great-heavens-above-what-have-i-done-um-anyways-lets-see-what-millenials-have-to-say"><em>Great heavens above what HAVE I DONE!!!! Um, anyways… let’s see what millenials have to say?</em></h3>
+<div id="2ef97cf8-0b5c-428d-a81d-71b2b04c9718" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>response4 <span class="op">=</span> get_claude_response(<span class="st">"Using any of the relevant slang words for millenials, can you rewrite the U.S. Declaration of Independence? Here it is: The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Here's a millennial slang version:
+
+The Epic Group Chat of the 13 States Spilling the Tea, Fr Fr
+
+Ok so like literally, when stuff gets totally toxic between people who've been in this situationship with another group, and it's time to ghost them and do our own thing (as we should, periodt), and level up to where we deserve to be (because that's the vibe the universe intended, no cap), we gotta keep it 100 with everyone and drop the receipts about why we're saying "thank u, next" to this whole arrangement.
+
+Low key, we're just trying to be extra transparent about why we can't even rn with this relationship. Big yikes, but it is what it is. We're just gonna spill all the tea about why we're hitting that unfollow button, fam. No shade, but we're done done.
+
+(Note: This maintains the core message while using contemporary slang terms and social media-influenced language patterns common among millennials)</code></pre>
+</div>
+</div>
+<p>**Okay, so two conclusions: (1) Claude has ample knwoledge of Gen Z/Alpha lingo, and is somewhat able to use it well, and (2) either Claude doesn’t know what millenial slang is out there, or there simply isn’t as much millenial slang to use for something like this. To help Claude out, I’ll prompt it the same way, but this time give it the “21 Millennial Slang Words We’re All Saying Now” (an article I found online</p>
+<div id="20c61007-3c10-4be7-b031-b7dfe978812b" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>response5 <span class="op">=</span> get_claude_response(<span class="st">"Using any of the 21 millenial slang words we're all saying now, can you rewrite the first paragraph of the declaration of Independence?: adulting, bae, basic, clap back, humble brag, extra, fam, high-key, lit, low-key, receipts, savage, shipping, shook, slay, stan, sus, thirsty, throw shade, trill, woke."</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response5)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Here's a slang-filled rewrite of the Declaration's opening (with historical concepts preserved but expressed very differently):
+
+Fam, we're high-key done with this sus situation. Like, we've got receipts that prove all humans are trill and deserve the same basic rights - life, liberty, and the pursuit of being lit. We're woke enough to know that when the government is throwing shade and being extra with their power, the people need to clap back. We're shook that it's come to this, but we're about to slay this whole independence thing. No humble brag, but we've got some straight facts to spill about why we're not shipping this relationship with Britain anymore. Tbh, the King's been mad thirsty for control, and we're just not here for that energy, bae.
+
+Note: This maintains the core ideas of equality, self-evident rights, and the need to explain separation, just expressed through modern slang.</code></pre>
+</div>
+</div>
+<p>Jeeez okay, now that’s more like it (I think). Hey, I wasn’t around for millenial slang, but from my professional interpretation, Claude slayed at understanding and using different generational lingo!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
