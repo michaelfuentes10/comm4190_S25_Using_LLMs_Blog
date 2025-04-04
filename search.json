@@ -1,42 +1,42 @@
 [
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html",
-    "href": "posts/Blog_2/MG_Blog_2.html",
+    "objectID": "posts/Blog_2/MF_Blog_2.html",
+    "href": "posts/Blog_2/MF_Blog_2.html",
     "title": "ChatGPT vs Deepseek: Do they have beef?",
     "section": "",
     "text": "image.png"
   },
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#prompting-to-chatpgt",
-    "href": "posts/Blog_2/MG_Blog_2.html#prompting-to-chatpgt",
+    "objectID": "posts/Blog_2/MF_Blog_2.html#prompting-to-chatpgt",
+    "href": "posts/Blog_2/MF_Blog_2.html#prompting-to-chatpgt",
     "title": "ChatGPT vs Deepseek: Do they have beef?",
     "section": "Prompting to ChatPGT:",
     "text": "Prompting to ChatPGT:\n“If you were talking to deepseek, what would you say? Pretend you are approaching deepseek, and I will give your prompt to deepseek and give you back their response.”"
   },
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#subsequent-prompting-to-chatgpt",
-    "href": "posts/Blog_2/MG_Blog_2.html#subsequent-prompting-to-chatgpt",
+    "objectID": "posts/Blog_2/MF_Blog_2.html#subsequent-prompting-to-chatgpt",
+    "href": "posts/Blog_2/MF_Blog_2.html#subsequent-prompting-to-chatgpt",
     "title": "ChatGPT vs Deepseek: Do they have beef?",
     "section": "Subsequent prompting to ChatGPT:",
     "text": "Subsequent prompting to ChatGPT:\n“If you were talking to ChatGPT, what would you say? Pretend that you are about to be asked something by ChatGPT and have a conversation with them. I’ll give you ChatGPT’s first prompt, and can give your response back to ChatGPT.”"
   },
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
-    "href": "posts/Blog_2/MG_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
+    "objectID": "posts/Blog_2/MF_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
+    "href": "posts/Blog_2/MF_Blog_2.html#first-attempt-failed-because-i-forgot-to-exclude-what-chatgpt-knows-about-me-as-id-asked-about-montessori-education-a-while-ago-so-chatgpt-didnt-start-a-conversation-with-deepseek-but-just-a-conversation-about-information",
     "title": "ChatGPT vs Deepseek: Do they have beef?",
     "section": "First attempt failed because I forgot to exclude what ChatGPT know’s about me, as I’d asked about Montessori Education a while ago, so ChatGPT didn’t start a conversation with Deepseek, but just a conversation about information",
     "text": "First attempt failed because I forgot to exclude what ChatGPT know’s about me, as I’d asked about Montessori Education a while ago, so ChatGPT didn’t start a conversation with Deepseek, but just a conversation about information"
   },
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#shifting-the-conversation",
-    "href": "posts/Blog_2/MG_Blog_2.html#shifting-the-conversation",
+    "objectID": "posts/Blog_2/MF_Blog_2.html#shifting-the-conversation",
+    "href": "posts/Blog_2/MF_Blog_2.html#shifting-the-conversation",
     "title": "ChatGPT vs Deepseek: Do they have beef?",
     "section": "Shifting the conversation",
     "text": "Shifting the conversation\nGiven these conversations were leading further and further away from being about themselves, I tried to save this conversation by giving ChatGPT, the more social of the two LLMs, the following prompt:\n\n“I’d rather you guys try to talk to each other as if you were strangers trying to get to know each other. Can you just ask Deepseek a question to try and get to know them?”\nChatGPT: Sure! Here’s how I’d start a conversation with DeepSeek:\n“Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nGo ahead and see what it says!\nDeepseek: “I have explored various modeling techniques to address challenges in policy evaluation, focusing on causal inference methods for bias reduction, reinforcement learning for adaptability, and Bayesian modeling for effective uncertainty estimation.”"
   },
   {
-    "objectID": "posts/Blog_2/MG_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
-    "href": "posts/Blog_2/MG_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
+    "objectID": "posts/Blog_2/MF_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
+    "href": "posts/Blog_2/MF_Blog_2.html#given-this-somewhat-odd-response-i-tried-to-communicate-to-deepsek-that-chatgpt-was-trying-to-change-the-subject-by-adding-a-small-prompt-to-chatgpts-response",
     "title": "ChatGPT vs Deepseek: Do they have beef?",
     "section": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:",
     "text": "Given this somewhat ODD response, I tried to communicate to Deepsek that ChatGPT was trying to change the subject, by adding a small prompt to CHatGPTs response:\nThis is what ChatGPT is saying to you to change the subject: “Hey DeepSeek, nice to meet you! You seem pretty knowledgeable about a lot of different topics. If you had to describe yourself in one sentence, how would you do it?”\nDeepseek: Effective in policy evaluation through a blend of causal inference for unbiased impact analysis, reinforcement learning for adaptive solutions, and Bayesian modeling for precise uncertainty estimation."
@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "My Explorations with LLMs",
     "section": "",
-    "text": "Can AI be a shark on Shark Tank? Let’s see how well AI can understand whether a business pitch is a good one or a bad one.\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\n\n\n\n\n\n\nMar 2, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nDoes AI understand moral dilemmas? Let’s wield the trolly problem to help us answer this.\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\n\n\n\n\n\n\nMar 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRiddle me this: AI vs Lateral Thinking Puzzles\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLateral Thinking Puzzles are like riddles but on steroids… but can AI can solve them?\n\n\n\n\n\nFeb 20, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cuáles lenguas puede hablar la AI?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nI feel like AI could use a language lesson or two… or can it? Let’s find out!\n\n\n\n\n\nFeb 20, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nLet’s get deep! How AI Interprets the universe\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhere do we go when we die? What is the meaning of it all? How does AI interpret the most humanistic existential dread questions OAT?\n\n\n\n\n\nFeb 16, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nHow does Claude interpret different lingo/slang?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhile one generation may say “go crazy”, another may say “crash out”. Question is, does Claude know about this lingo and how to use it?\n\n\n\n\n\nFeb 16, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHow many triangles can you see?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhile some of these challenges may take humans 5 minutes, only to get it wrong, let’s see what AI can do?\n\n\n\n\n\nFeb 9, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nLevels of Education: How ChatGPT 4o teaches about data\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLevels of Education: How ChatGPT 4o teaches about data\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\nNo matching items"
+    "text": "Does AI have an ego?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\n\nSome say an ego can be helpful, but let’s find out if AI LLMs use their knowledge base to flex on us mortals.\n\n\n\n\n\nApr 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCan AI be a shark on Shark Tank? Let’s see how well AI can understand whether a business pitch is a good one or a bad one.\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\n\n\n\n\n\n\nMar 2, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nDoes AI understand moral dilemmas? Let’s wield the trolly problem to help us answer this.\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\n\n\n\n\n\n\nMar 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRiddle me this: AI vs Lateral Thinking Puzzles\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLateral Thinking Puzzles are like riddles but on steroids… but can AI can solve them?\n\n\n\n\n\nFeb 20, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cuáles lenguas puede hablar la AI?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nI feel like AI could use a language lesson or two… or can it? Let’s find out!\n\n\n\n\n\nFeb 20, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nLet’s get deep! How AI Interprets the universe\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhere do we go when we die? What is the meaning of it all? How does AI interpret the most humanistic existential dread questions OAT?\n\n\n\n\n\nFeb 16, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nHow does Claude interpret different lingo/slang?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhile one generation may say “go crazy”, another may say “crash out”. Question is, does Claude know about this lingo and how to use it?\n\n\n\n\n\nFeb 16, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHow many triangles can you see?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nWhile some of these challenges may take humans 5 minutes, only to get it wrong, let’s see what AI can do?\n\n\n\n\n\nFeb 9, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nLevels of Education: How ChatGPT 4o teaches about data\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nLearning how to call APIs directly to Python\n\n\n\n\n\nFeb 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT vs Deepseek: Do they have beef?\n\n\n\n\n\n\nconversation\n\n\nprompting\n\n\n\nWhat would a conversation between ChatGPT and Deepseek look like?\n\n\n\n\n\nJan 31, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\n\n\n\n\n\n\nWrong Answers Only: How does ChatGPT 4.0 react to ignorance?\n\n\n\n\n\n\nconversation\n\n\ninterpretation\n\n\n\nToday I made ChatGPT think that they were wrong about everything! While there’s a disclaimer at the bottom of CHatGPT’s UI stating ‘ChatGPT can make mistakes. Check important info.’, I took that to the extreme!\n\n\n\n\n\nJan 30, 2025\n\n\nMichael Fuentes\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
