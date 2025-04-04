@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Michael Fuentes">
 <meta name="dcterms.date" content="2025-02-16">
 <meta name="description" content="While one generation may say “go crazy”, another may say “crash out”. Question is, does Claude know about this lingo and how to use it?">
 
@@ -158,12 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Michael Fuentes </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -216,26 +209,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here are 20 popular slang words commonly used by Gen Z and Gen Alpha:</p>
 <ol type="1">
-<li>No cap - Not lying/being truthful</li>
-<li>Sus - Suspicious/sketchy</li>
-<li>Bussin - Really good, especially food</li>
-<li>Slay - To do something exceptionally well</li>
-<li>Sheesh - Expression of amazement or disbelief</li>
-<li>Tea - Gossip or drama</li>
-<li>Hits different - Something that’s uniquely good</li>
-<li>Main character - Being the focus of attention</li>
-<li>Living rent free - Something you can’t stop thinking about</li>
-<li>Periodt - Used for emphasis, like “period” but stronger</li>
-<li>Lowkey - Subtle or secretive</li>
-<li>Highkey - Obviously or openly</li>
-<li>Understood the assignment - Did something perfectly</li>
-<li>It’s giving… - It resembles or reminds of something</li>
-<li>Pressed - Upset or bothered</li>
-<li>Ate - Did something really well</li>
-<li>Based - Being yourself/authentic regardless of others’ opinions</li>
-<li>Mid - Mediocre or disappointing</li>
-<li>Rizz - Charisma or charm, especially in dating</li>
-<li>Finna - Going to/about to</li>
+<li>Cap/No cap (lying/not lying)</li>
+<li>Slay (doing something exceptionally well)</li>
+<li>Bussin’ (really good, especially food)</li>
+<li>No shot (no way/impossible)</li>
+<li>Tea (gossip/drama)</li>
+<li>Rizz (charisma/charm, especially romantic)</li>
+<li>Mid (mediocre/underwhelming)</li>
+<li>Bet (agreement/okay)</li>
+<li>Shook (shocked/surprised)</li>
+<li>Periodt (emphasizing a point)</li>
+<li>Sus (suspicious/sketchy)</li>
+<li>Hits different (especially good/special)</li>
+<li>Living rent free (constantly thinking about something)</li>
+<li>Main character (being the center of attention)</li>
+<li>Vibe check (assessing a situation/person)</li>
+<li>Slaps (really good, especially music)</li>
+<li>Based (being yourself/agreeable)</li>
+<li>Ion (I don’t)</li>
+<li>Deadass (seriously/for real)</li>
+<li>It’s giving… (resembles/reminds of)</li>
 </ol>
 <p>Note that slang evolves quickly, so some terms may become outdated while new ones emerge regularly.</p>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>response2 <span class="op">=</span> get_claude_response(<span class="st">"Can you name me 20 slang words used primarily by the millenial generation?"</span>)</span>
@@ -244,49 +237,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Slay - to do something exceptionally well</li>
 <li>Tea - gossip or drama</li>
-<li>Salty - being upset, angry, or bitter</li>
-<li>Extra - over-the-top or excessive behavior</li>
 <li>Basic - mainstream or unoriginal</li>
-<li>Lowkey - subtle or secretive</li>
-<li>Highkey - obvious or openly</li>
-<li>Throw shade - to subtly criticize someone</li>
+<li>Salty - upset, angry, or bitter</li>
+<li>Extra - over-the-top or dramatic</li>
+<li>Lit - exciting or excellent</li>
+<li>Shade - subtle disrespect</li>
 <li>Snatched - looking good or on point</li>
-<li>Fam - friends or close acquaintances</li>
-<li>Sus - suspicious or sketchy</li>
-<li>Lit - exciting or awesome</li>
-<li>Dead - extremely funny or overwhelming</li>
-<li>Sips tea - observing drama without getting involved</li>
-<li>Mood - something relatable</li>
+<li>Dead - extremely funny or amusing</li>
+<li>Low key - subtle or secretive</li>
+<li>High key - obvious or openly</li>
 <li>Squad - friend group</li>
-<li>Shook - shocked or surprised</li>
+<li>Flex - to show off</li>
+<li>Fam - friends or family</li>
+<li>Swerve - to avoid or dismiss something</li>
 <li>Savage - fierce or harsh in a good way</li>
-<li>On fleek - perfect or flawless</li>
-<li>Adulting - engaging in adult responsibilities</li>
+<li>Cancelled - rejected or boycotted</li>
+<li>On point - perfect or exactly right</li>
+<li>Feels - strong emotional response</li>
+<li>Throw shade - to criticize or disrespect subtly</li>
 </ol>
-<p>Note that some of these terms have evolved or become less popular over time, and some are now also used by Gen Z or have become more mainstream.</p>
+<p>Note that some of these terms have evolved or crossed over into other generations’ vocabulary, and new slang terms continue to emerge while others become dated.</p>
 <p>Okay, so from observation, there seems to be some overlap from generation to generation, which sort of hints at how much more recent generations rely on slang, especially in correlation with the internet and social media era. Nonetheless, let’s see what Claude can do with these slang words?</p>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>response3 <span class="op">=</span> get_claude_response(<span class="st">"Using any of the relevant slang words for Gen Z/Alpha, can you rewrite the U.S. Declaration of Independence? Here it is: The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here’s a Gen Z/Alpha slang version:</p>
-<p>No cap fr fr - here’s the tea from all the states that are lowkey done ⚠️</p>
-<p>So bestie, sometimes you just gotta cut toxic people off and do your own thing, IYKYK. We’re just tryna vibe in our own lane and secure the bag the way Mother Nature and God said we could (periodt). But like, we’re not gonna ghost without spilling the tea about why we’re saying “thank u, next” to Britain. It’s giving oppression, and we’re literally about to expose everything. Deadass.</p>
-<p>(Note: This maintains the core message while using contemporary slang terms like “no cap” (no lie), “tea” (truth/gossip), “toxic,” “periodt” (period/end of discussion), “vibe,” and “deadass” (seriously). The tone is deliberately informal and includes common social media-style expressions.)</p>
+<p>No cap, we’re all out here in these 13 states spitting facts rn and it’s giving independent nation vibes fr fr. So like, when the vibe gets weird with another country and you’re just not feeling the connection anymore (major red flag btw), and you’re tryna level up and become your own main character - which is literally just basic human rights energy and what the universe wants for us - you gotta keep it 💯 and drop the receipts about why you’re saying “thank u, next” to the whole situation. Bestie, it’s giving independence. Period. Iykyk.</p>
+<p>(Note: This maintains the core message while using current slang terms like “no cap” (no lie), “fr fr” (for real), “red flag”, “main character energy”, “receipts” (evidence/proof), and common social media speech patterns.)</p>
 <section id="great-heavens-above-what-have-i-done-um-anyways-lets-see-what-millenials-have-to-say" class="level3">
 <h3 class="anchored" data-anchor-id="great-heavens-above-what-have-i-done-um-anyways-lets-see-what-millenials-have-to-say"><em>Great heavens above what HAVE I DONE!!!! Um, anyways… let’s see what millenials have to say?</em></h3>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>response4 <span class="op">=</span> get_claude_response(<span class="st">"Using any of the relevant slang words for millenials, can you rewrite the U.S. Declaration of Independence? Here it is: The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Here’s a millennial slang version:</p>
-<p>The whole squad of the thirteen United States be like:</p>
-<p>OK fam, here’s the tea… When life comes at you fast and you gotta yeet yourself away from some toxic relationship that’s totally not serving you anymore, and you’re tryna level up to be your own independent boss bae (which is literally your basic human right and what the universe intended), you should probably spill the tea about why you’re hitting that unfollow button.</p>
-<p>Like, we’re not trying to be extra, but it’s low-key important to put everyone on notice about why we can’t even with this situation anymore. No cap.</p>
-<p>#Independence #ItsComplicatedButWereOver #LivingOurBestLife #Blessed</p>
-<p>(Note: This is a very informal and humorous interpretation using contemporary slang terms while maintaining the core message of declaring independence and explaining the reasons for separation.)</p>
+<p>Here’s a millennial slang version of that excerpt:</p>
+<p>Yo fam, this is our collab Declaration from all the squad in the 13 States, and we’re spilling the tea rn. Listen up: Sometimes you gotta yeet yourself out of a toxic relationship, and that’s literally what’s happening here. We’re about to go our separate ways and do our own thing because that’s low-key what we deserve according to the universe and God’s vibe. But like, we’re not ghosting without receipts - we’re gonna explain all this drama and why we can’t even with this situation anymore. No cap.</p>
+<p>Note: This is obviously very informal and uses contemporary slang/internet language while maintaining the core message of separating from Britain and explaining the reasons why.</p>
 <p>**Okay, so two conclusions: (1) Claude has ample knwoledge of Gen Z/Alpha lingo, and is somewhat able to use it well, and (2) either Claude doesn’t know what millenial slang is out there, or there simply isn’t as much millenial slang to use for something like this. To help Claude out, I’ll prompt it the same way, but this time give it the “21 Millennial Slang Words We’re All Saying Now” (an article I found online</p>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>response5 <span class="op">=</span> get_claude_response(<span class="st">"Using any of the 21 millenial slang words we're all saying now, can you rewrite the first paragraph of the declaration of Independence?: adulting, bae, basic, clap back, humble brag, extra, fam, high-key, lit, low-key, receipts, savage, shipping, shook, slay, stan, sus, thirsty, throw shade, trill, woke."</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response5)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here’s a millennial slang version of the Declaration’s first paragraph:</p>
-<p>Fam, when it’s high-key time for one squad to be extra woke and throw shade at their basic government, and low-key start shipping with other nations instead, you gotta spill the tea with some receipts. These are just straight facts that are trill AF - we’re all created equal and have the same rights to be out here adulting, living our best lives, and slaying our pursuit of happiness. Like, we’re gonna lay it all out and clap back with the savage reasons why we’re so shook by this sus treatment. No humble brag, but it’s lit how we’re about to stan freedom and independence rn.</p>
-<p>(Original text for reference: “When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature’s God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.”)</p>
+<p>Fam, when it’s high-key time for the squad to split from another group they’ve been shipping with, and you gotta be extra woke about getting those same rights that are literally lit and given to everyone by whoever’s up there, you’ve got to spill the tea and drop those receipts to show why you’re throwing shade. We’re not trying to be basic about this, but we’re shook by how sus the king’s been acting, and TBH, we’ve got to clap back. So like, we’re not trying to humble brag, but these facts are straight savage, and the whole world needs to know why we’re not about that life anymore.</p>
 <p>Jeeez okay, now that’s more like it (I think). Hey, I wasn’t around for millenial slang, but from my professional interpretation, Claude slayed at understanding and using different generational lingo!</p>
 
 
