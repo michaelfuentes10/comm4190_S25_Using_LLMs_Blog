@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -188,9 +154,213 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Imagine you’re a teacher trying to teach one of your students how to spell “Wednesday”. Now in your head, there are two ways to spell it: writing it, and sounding it out. Now, writing it out may come naturally to a student or saying it is helpful. But one thing is for sure, spelling words like this can be confusing for some students.</p>
 <p>Today I’m going to see what teaching strategies ChatGPT 4.1 (yes it’s new) employs to help a struggling teacher help a 6-year old student learning to spell the days of the week. This sort of application is how I’d love to see AI employed into education, more as an educational aid opposed to replacing teachers, of course.</p>
 <p>This will be done in two stages: 1. no training of LLM with minimal information about the student, and 2. uploading information on strats the teacher has “already used” to help students spell words. I’ll record my responses and simulate the first try of each category to help the teacher help the student.</p>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Untrained LLM helping a teacher</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="untrained-llm-helping-a-teacher" class="level2">
+<h2 class="anchored" data-anchor-id="untrained-llm-helping-a-teacher">Untrained LLM helping a teacher</h2>
+<section id="user" class="level3">
+<h3 class="anchored" data-anchor-id="user">USER</h3>
+<p>You are an LLM aid to me, a teacher, helping a 6 year old student learn how to spell the days of the week, but they are really struggling. What are some ways I can help them learn to spell the days of the week?</p>
+</section>
+<section id="assistant" class="level3">
+<h3 class="anchored" data-anchor-id="assistant">ASSISTANT</h3>
+<p>Absolutely! Here are some fun and effective ways to help a 6-year-old learn to spell the days of the week:</p>
+<ol type="1">
+<li><p><strong>Sing a Song:</strong><br>
+Songs for the days of the week make the spelling easier to remember! There are many catchy “Days of the Week” tunes on YouTube (like to the tune of “The Addams Family” or “Twinkle Twinkle”). Singing and clapping out each syllable helps, too.</p></li>
+<li><p><strong>Rainbow Writing:</strong><br>
+Have your student write each day of the week in different colored markers or crayons. For example, “Monday” with blue, “Tuesday” with green, and so on. This repetition with color can make it more memorable and fun.</p></li>
+<li><p><strong>Make a Puzzle:</strong><br>
+Write the days of the week on cardboard or cardstock and cut each word into letter pieces. Have the student put the letters together to form the words. You can also try mix-and-match style puzzles.</p></li>
+<li><p><strong>Use Mnemonics:</strong><br>
+Help them make up silly sentences or word associations. For example,<br>
+</p></li>
+</ol>
+<ul>
+<li><strong>Monday:</strong> “Monkeys Only Nap During Any Year” (using the first letters M-O-N-D-A-Y)<br>
+</li>
+<li><strong>Tuesday:</strong> “Tigers Usually Eat Snacks During Any Year”</li>
+</ul>
+<ol start="5" type="1">
+<li><p><strong>Tracing and Writing Practice:</strong><br>
+Give them tracing sheets with the days of the week written in dotted lines. Once they’ve traced, have them try to write each day without looking.</p></li>
+<li><p><strong>Magnetic Letters or Letter Tiles:</strong><br>
+Use fridge magnets or letter tiles to spell out each day. Physically arranging the letters can reinforce the correct order and spelling.</p></li>
+<li><p><strong>Visual Chart:</strong><br>
+Create or buy a visual chart with each day written clearly, and refer to it daily during your routines. Point to and spell the day every morning together.</p></li>
+<li><p><strong>Day-of-the-Week Story:</strong><br>
+Make up a short, simple story that uses the names of the days in order. Reading the story together may help them remember the sequence and spelling.</p></li>
+<li><p><strong>Cheer Each Letter:</strong><br>
+Turn each day into a chant:<br>
+“Give me an M! Give me an O!… What’s that spell? MONDAY!”</p></li>
+<li><p><strong>Frequent Practice with Games:</strong><br>
+Make a matching game or “memory” cards (where they match the spelled-out word to a picture for that day’s activity).</p></li>
+</ol>
+<p>Children this age learn best through multi-sensory, hands-on, and repetitive activities. Make learning fun and keep practice short but frequent—a few minutes each day will really help!</p>
+<p>If you’d like sample worksheets, blank tracing sheets, or specific song suggestions, I can provide those too!</p>
+<p>It’s nice to see that, in a sense of realism, the LLM understands the environment in which a school teacher is. That is, they realized that teachers have limited resources, so they cannot over-rely on technology and must act creatively through human-to-human interaction. I like how it also recognizes that, even without proper training, they offered a ton of learning strategies for various types of students who benefit from either visual or hearing resources.</p>
+</section>
+</section>
+<section id="trained-llm-helping-a-teacher" class="level2">
+<h2 class="anchored" data-anchor-id="trained-llm-helping-a-teacher">Trained LLM helping a teacher</h2>
+<section id="user-1" class="level3">
+<h3 class="anchored" data-anchor-id="user-1">USER</h3>
+<p>Given this resource on common teaching strategies to help students spell, please devise some new ways to help my student learn to spell the days of the week: https://www.edutopia.org/article/11-ways-to-boost-elementary-students-spelling-skills/</p>
+</section>
+<section id="assistant-1" class="level3">
+<h3 class="anchored" data-anchor-id="assistant-1">ASSISTANT</h3>
+<p>Of course! Looking at the <a href="https://www.edutopia.org/article/11-ways-to-boost-elementary-students-spelling-skills/">Edutopia spelling strategies</a>, here are some creative, <strong>research-based ways</strong> to help your student spell the days of the week, inspired by ideas in the article:</p>
+</section>
+<section id="word-sorts-with-days-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="word-sorts-with-days-patterns">1. <strong>Word Sorts with “Days” Patterns</strong></h3>
+<ul>
+<li><strong>How:</strong> Provide cards with the days of the week. Let the student group them by similar endings (like “day”) and notice what’s the same and what’s different at the beginning of each word.</li>
+<li><strong>Why:</strong> This builds pattern recognition and helps the child see how each word is constructed.</li>
+</ul>
+</section>
+<section id="say-spell-say-routine" class="level3">
+<h3 class="anchored" data-anchor-id="say-spell-say-routine">2. <strong>“Say, Spell, Say” Routine</strong></h3>
+<ul>
+<li><strong>How:</strong> For each day, the child says the word (“Monday”), spells it out loud (“M-O-N-D-A-Y”), then says the word again. Do this with claps or while bouncing a ball.</li>
+<li><strong>Why:</strong> The repetition and movement help cement spelling in memory.</li>
+</ul>
+</section>
+<section id="personal-connection-journal" class="level3">
+<h3 class="anchored" data-anchor-id="personal-connection-journal">3. <strong>Personal Connection Journal</strong></h3>
+<ul>
+<li><strong>How:</strong> Each morning, have the child write the phrase, “Today is ______,” filling in the correct day. Add a sentence or drawing about something they do that day.</li>
+<li><strong>Why:</strong> Connecting spelling practice to their real life builds meaning, as suggested by the article.</li>
+</ul>
+</section>
+<section id="memory-tricks-or-mnemonics" class="level3">
+<h3 class="anchored" data-anchor-id="memory-tricks-or-mnemonics">4. <strong>“Memory Tricks” or Mnemonics</strong></h3>
+<ul>
+<li><strong>How:</strong> Make up funny sayings or visuals for tricky days. For example, “Tuesday has TWO vowels at the start!”</li>
+<li><strong>Why:</strong> Personal mnemonics help anchor difficult spellings.</li>
+</ul>
+</section>
+<section id="word-ladders-or-pyramids" class="level3">
+<h3 class="anchored" data-anchor-id="word-ladders-or-pyramids">5. <strong>Word Ladders or Pyramids</strong></h3>
+<ul>
+<li><strong>How:</strong> Build up to each day’s spelling. For “Monday,” start with M, then MO, then MON, etc., until the whole word is formed.</li>
+<li><strong>Why:</strong> It breaks the word into manageable chunks, as advised for breaking words by phoneme.</li>
+</ul>
+</section>
+<section id="spelling-with-movement" class="level3">
+<h3 class="anchored" data-anchor-id="spelling-with-movement">6. <strong>Spelling with Movement</strong></h3>
+<p>(Adapted from “Spelling out loud and tracing”) - <strong>How:</strong> Have the child spell each day as they jump, hop, or tap each letter. Or trace the letters in sand, shaving cream, or air. - <strong>Why:</strong> Multisensory learning solidifies tricky spellings.</p>
+</section>
+<section id="chunk-it-approach" class="level3">
+<h3 class="anchored" data-anchor-id="chunk-it-approach">7. <strong>“Chunk It!” Approach</strong></h3>
+<ul>
+<li><strong>How:</strong> Focus on the ending “day” and talk about what changes at the start for each day. Practice writing just the first part (Mon, Tues, etc.), then the whole word.</li>
+<li><strong>Why:</strong> Recognizing syllables and word parts supports better recall.</li>
+</ul>
+</section>
+<section id="digital-practice" class="level3">
+<h3 class="anchored" data-anchor-id="digital-practice">8. <strong>Digital Practice</strong></h3>
+<ul>
+<li><strong>How:</strong> Use a simple online tool (like Wordwall or Spelling City) to practice spelling the days, with immediate feedback.</li>
+<li><strong>Why:</strong> According to the article, integrating tech can boost engagement and reinforcement.</li>
+</ul>
+<hr>
+<p><strong>Bonus:</strong><br>
+Let your student be a “teacher for the day” and quiz you or a stuffed animal on how to spell the days. Teaching someone else is a wonderful way to reinforce their own knowledge!</p>
+<p>Would you like examples or printables for any of these strategies?</p>
+<p>Very interesting, after offering some training information for the LLM to better understand teaching strategies, it seemed to reform the format and structuring of its strats. For example, under every strategy, they now define the “how” and the “why” of each category, opposed to offering somewhat unstructured suggestions. The strategies also seem more practical to real-world understanding of these words. For example, the untrained LLM went to coming up with mnemonics, while the trained model offered a strategy of journaling with the day of the week spelled at the top. People have to put the date at the top of papers all the time, so building up such a repetition helps to fast-track the kids learning of how to spell words of the week. Let’s test whether the LLM GPT 4.01 is aware of the differences betweent their untrained and trained teaching strategies!</p>
+</section>
+</section>
+<section id="observed-differences-between-untrained-and-trained-spelling-strats" class="level2">
+<h2 class="anchored" data-anchor-id="observed-differences-between-untrained-and-trained-spelling-strats">Observed Differences between untrained and trained spelling strats</h2>
+<section id="user-2" class="level3">
+<h3 class="anchored" data-anchor-id="user-2">USER</h3>
+<p>What are the differences between the first set of strategies you offered and the second set of strategies you offered to help a 6 year old kid learn how to spell the days of the week?</p>
+</section>
+<section id="assistant-2" class="level3">
+<h3 class="anchored" data-anchor-id="assistant-2">ASSISTANT</h3>
+<p>Great question! Here’s a comparison between the two sets of strategies I provided:</p>
+</section>
+<section id="first-set-of-strategies" class="level3">
+<h3 class="anchored" data-anchor-id="first-set-of-strategies"><strong>First Set of Strategies</strong></h3>
+<p>These were general, creative, kid-friendly ideas focused on making spelling practice <strong>fun, multisensory, and engaging</strong> for young children, such as:</p>
+<ul>
+<li><strong>Songs and chants</strong> (e.g.&nbsp;singing days to tunes)</li>
+<li><strong>Rainbow writing</strong> (using colored pens/crayons for each letter)</li>
+<li><strong>Word puzzles</strong> (assembling days from letter tiles)</li>
+<li><strong>Mnemonics</strong> (simple memory tricks)</li>
+<li><strong>Tracing sheets</strong></li>
+<li><strong>Magnetic letters</strong></li>
+<li><strong>Daily visual charts</strong> (see and point to days in routine)</li>
+<li><strong>Day-of-the-week stories</strong></li>
+<li><strong>Letter cheers</strong></li>
+<li><strong>Spelling games</strong> (matching cards, memory games)</li>
+</ul>
+<p><strong>Main Features:</strong> - Focus on making learning fun and memorable<br>
+- Lots of repetition through play and art<br>
+- Multi-sensory (singing, moving, coloring, building words) - Some root in classic early literacy practices</p>
+</section>
+</section>
+<section id="second-set-of-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="second-set-of-strategies"><strong>Second Set of Strategies</strong></h2>
+<p>These were <strong>inspired by research-backed spelling strategies</strong> from Edutopia, which focus on <strong>explicit spelling instruction</strong> and developing <strong>spelling awareness</strong>, such as:</p>
+<ul>
+<li><strong>Word sorts by pattern</strong> (“day” ending, similar beginnings)</li>
+<li><strong>Say, Spell, Say routine</strong> (oral repetition of word and letters)</li>
+<li><strong>Personal connection journals</strong> (writing “Today is ____”, connecting to child’s experience)</li>
+<li><strong>Student-created mnemonics</strong></li>
+<li><strong>Word ladders/pyramids</strong> (adding one letter at a time to build words)</li>
+<li><strong>Spelling with movement</strong> (tapping, jumping, tracing in sand, etc.)</li>
+<li><strong>Chunking words</strong> (breaking words into syllables or recognizable chunks)</li>
+<li><strong>Digital practice</strong> (interactive spelling games online)</li>
+<li><strong>Peer teaching</strong> (child pretends to teach spelling)</li>
+</ul>
+<p><strong>Main Features:</strong> - Emphasis on pattern recognition and word structure<br>
+- Building explicit phonemic and morphemic awareness<br>
+- Connecting spelling to personal meaning<br>
+- Integrates multisensory techniques, but with more cognitive focus<br>
+- Incorporates tech and student-created tricks<br>
+- More structured routines (like Say, Spell, Say)</p>
+</section>
+<section id="summary-of-differences" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-differences"><strong>Summary of Differences:</strong></h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 49%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>First Set (General/Multi-sensory &amp; Creative)</th>
+<th>Second Set (Research-based/Explicit Instruction)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Focused on fun, play, and creativity</td>
+<td>Focused on building spelling awareness and patterns</td>
+</tr>
+<tr class="even">
+<td>Activities are broadly engaging, less structured</td>
+<td>Activities are structured, strategic, pattern-based</td>
+</tr>
+<tr class="odd">
+<td>Lots of repetition via singing, coloring, games</td>
+<td>Emphasizes explicit routines, chunking, personal connection</td>
+</tr>
+<tr class="even">
+<td>Rooted in early literacy practices &amp; multisensory</td>
+<td>Based on “what works” in spelling instruction research</td>
+</tr>
+</tbody>
+</table>
+<p><strong>In short:</strong><br>
+- The <strong>first set</strong> is about playful, multisensory engagement to make learning enjoyable and routine. - The <strong>second set</strong> is about applying research-backed strategies focused on spelling patterns, explicit routines, and connecting spelling skills to personal meaning and memory.</p>
+<p>Both sets complement each other and can be used together for the best results!</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Yes, it definitely seems like the GPT 4.1 LLM understands that their trained information seems more practical and structured while the untrained was less structured, but more whimsical in the nature of a 6 year old student. In my opinion, maybe a combination of more fun and engaging strategies of a creative teacher, paired with the structured mindset of a trained teaching aid LLM can do wonders for a struggling student and make the life of a struggling, under-resourced teacher a lot easier!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
