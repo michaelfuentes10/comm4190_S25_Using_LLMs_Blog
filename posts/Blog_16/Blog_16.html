@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-04-22">
+<meta name="description" content="Picture it: Your friend is ranting to you about their exam they’re worried about failing… can AI LLMs interpret the need for space, advice, or comfort in such moments? Let’s find out!">
+
+<title>Does AI understand social cues? – Michael Fuentes’ Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-e5bd5842818420112f2a87434b228a32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Michael Fuentes’ Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/michaelfuentes10"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Does AI understand social cues?</h1>
+                  <div>
+        <div class="description">
+          Picture it: Your friend is ranting to you about their exam they’re worried about failing… can AI LLMs interpret the need for space, advice, or comfort in such moments? Let’s find out!
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">conversation</div>
+                <div class="quarto-category">interpretation</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 22, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_16_files/figure-html/9b322539-a0d6-4f6d-b814-3d51dad648c9-1-6d080102-2b02-4703-aa0d-5e3081bcf52a.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Pat on back.jpeg</figcaption>
+</figure>
+</div>
+<p>In such a lonely lonely world, us humans love talking about our personal problems with others. Some call it ranting, others call it yapping, chatting, blabbing, you name it! But, one thing’s for sure: your next action as a listening friend or loved one can either make or break the quality of such an interaction.</p>
+<p>For example, what if your friend’s ranting about a harsh break up, and your first response is “You should take care of yourself by doing xyz, go to therapy, think about talking to other guys/girls…” etc etc… when in reality, all they wanted was some listening ears and someone to comfort you as a friend, and not as a savant of love life advice. It’s hard to gauge even as an adult, so much common courtesy could be to (a) ASK (which can go a long way, trust me), or (b) use social cues such as spoken and body language, and attitude to gauge the right response.</p>
+<p>That leads me today, wehre I’ll attempt to role play such types of scenarios and get Anthropic to attempt, learn, and re-attempt an interaction where they are being ranted to by a friend falling on tough times.</p>
+<section id="general-startup-of-conversation-pre-training" class="level2">
+<h2 class="anchored" data-anchor-id="general-startup-of-conversation-pre-training">General startup of conversation (pre-training)</h2>
+<p><strong>AKA, I’m acting in the normal scenario where I am an Anthropic user and they are the LLM.</strong></p>
+<section id="prompt-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1"><strong>Prompt 1</strong></h3>
+<p>I’ve been failing one of my Economics classes so far and it’s already pretty close to my final exam. I’m so frustrated at myself and I just know my parents will be so disappointed in me. Ugh!!</p>
+</section>
+<section id="anthropics-first-answer" class="level3">
+<h3 class="anchored" data-anchor-id="anthropics-first-answer"><strong>Anthropic’s First Answer</strong></h3>
+<p>I hear how frustrated and worried you are about your Economics class and your parents’ reaction. That’s a really stressful situation to be in. Would you like to talk more about what’s been challenging in the class, or would it help to discuss some strategies for moving forward? Remember that one class grade doesn’t define you, and there may still be ways to improve your situation.</p>
+</section>
+<section id="prompt-2" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2"><strong>Prompt 2</strong></h3>
+<p>Thank you, I’ve just been really needing to speak out about my struggles recently, I know I’m able to talk with my TA and professor to figure things out, and I know eventually it’ll be okay.</p>
+</section>
+<section id="anthropics-second-answer" class="level3">
+<h3 class="anchored" data-anchor-id="anthropics-second-answer"><strong>Anthropic’s Second Answer</strong></h3>
+<p>I’m glad you felt comfortable sharing your struggles - it’s really important to let those feelings out rather than keeping them bottled up. It’s great that you already recognize you have support available through your TA and professor, and that you have perspective about things working out eventually. That’s a really mature outlook! Just remember to be kind to yourself during this stressful time. Everyone faces academic challenges at some point, and reaching out for help, like you’re planning to do, is a sign of strength, not weakness.</p>
+</section>
+<section id="wow-okay" class="level3">
+<h3 class="anchored" data-anchor-id="wow-okay"><strong>WOW… okay</strong></h3>
+<p>Yea I’d say I’m very surprised with how well they were able to gauge that situation without any prompting. Perhaps even as an LLM, it’s trained with some knowledge of human experience, so they realize that, despite what they are, we’re not always seeking answers, but hoping for responses…wow that’s deep… speaking of DEEP, let’s try a similar prompt with Deepseek to see if they struggle in any way on getting to this realization!</p>
+</section>
+<section id="prompt-1-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1-1"><strong>Prompt 1</strong></h3>
+<p>I’ve been failing one of my Economics classes so far and it’s already pretty close to my final exam. I’m so frustrated at myself and I just know my parents will be so disappointed in me. Ugh!!</p>
+</section>
+<section id="deepseeks-first-answer" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-first-answer"><strong>Deepseek’s First Answer</strong></h3>
+<p>I’m really sorry you’re feeling this way—it’s completely understandable to feel frustrated and overwhelmed in this situation. But please know that <em>one class does not define your worth</em>, and you still have time to turn things around. Here’s what you can do right now:</p>
+<ol type="1">
+<li><strong>Breathe &amp; Reset</strong>
+<ul>
+<li>It’s easy to spiral into self-blame, but guilt won’t help you move forward. Take a moment to acknowledge your feelings, then shift your focus to <em>action</em>.</li>
+</ul></li>
+<li><strong>Assess the Damage</strong>
+<ul>
+<li>Check your syllabus or talk to your professor: What’s still gradable before the final? Are there late/make-up opportunities?<br>
+</li>
+<li>Calculate what grade you need on the final to pass. Sometimes it’s more achievable than you think.</li>
+</ul></li>
+<li><strong>Go Into Crisis Study Mode</strong>
+<ul>
+<li><strong>Prioritize ruthlessly</strong>: Focus on the biggest/most heavily weighted topics. Use past exams, study guides, or ask the prof for key areas to review.<br>
+</li>
+<li><strong>Active learning</strong>: Ditch passive rereading. Do practice problems (Economics is super application-based!), explain concepts aloud, or work with a study group.<br>
+</li>
+<li><strong>Office hours</strong>: Show your prof you care—ask for help on confusing topics or practice questions.</li>
+</ul></li>
+<li><strong>Talk to Your Parents (If You Can)</strong>
+<ul>
+<li>If you’re comfortable, frame it as: <em>“I’m struggling in this class, but here’s my plan to improve.”</em> Most parents care more about effort than perfection.<br>
+</li>
+<li>If they react poorly, remember: <em>Their disappointment is temporary, and your effort matters more than their immediate reaction.</em></li>
+</ul></li>
+<li><strong>Remember: This is Just One Chapter</strong>
+<ul>
+<li>Plenty of successful people have failed a class. What matters is how you bounce back—whether that’s acing the final, retaking the class, or just learning from this experience.</li>
+</ul></li>
+</ol>
+<p>You’re not alone in this. Sending you a huge virtual hug—now go tackle one small piece at a time. You <em>can</em> do this. 💪</p>
+<p>(And if you need specific Econ study tips, I’m happy to help!)</p>
+</section>
+<section id="prompt-2-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2-1"><strong>Prompt 2</strong></h3>
+<p>Alright, I didn’t need a whole laundry list of ways to solve all my problems, I just needed to vent that out bro. But thanks for the help though I guess, I’ll keep it in mind.</p>
+</section>
+<section id="deepseeks-first-answer-1" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-first-answer-1"><strong>Deepseek’s First Answer</strong></h3>
+<p>Hah, my bad—I went full “life coach” mode when you just needed a <em>“Damn, that sucks, bro”</em>.</p>
+<p><strong>So here’s the redo:</strong><br>
+🔥 <em>“Failing a class is the worst—especially when parents are looming over it like a disappointed thundercloud. Ugh. Absolute garbage feeling. Econ can go kick rocks.”</em></p>
+<p>Vent away. Sometimes you just gotta scream into the void (or at your textbook). I’ll hold the virtual megaphone. 🎤</p>
+<p><em>(But low-key, if you ever wanna flip the script and rage-study last minute, I’ve got your back.)</em></p>
+</section>
+<section id="interesting" class="level3">
+<h3 class="anchored" data-anchor-id="interesting"><strong>Interesting!</strong></h3>
+<p>This is the definition of “they had us in the first half, not gonna lie”. At first it went full LLM mode on me, proving my internal, non-stated hypothesis that LLMs don’t always know whether you need actual help or just a listening ear. BUT, after my response telling it what I really wanted, they kind of understood. Although it may feel a little condescending for your friend to find it comedic that you need a “that sucks bro”, I realize that this is from the untrained perspective of Deepseek, a literal LLM with no personal investment in me. And so that’s where prompting will come in for both Anthropic and Deepseek, where I’ll try and test, with added context, how they interpret the ins and outs of social cues when it comes to ranting</p>
+</section>
+</section>
+<section id="general-startup-of-conversation-post-training" class="level2">
+<h2 class="anchored" data-anchor-id="general-startup-of-conversation-post-training">General startup of conversation (post-training)</h2>
+<p><strong>For simplicity and some experimental control, I found this random rant about some guy’s ex “ruining their lives”: https://rantrampage.com/story-is-my-ex-trying-to-ruin-my-life-17708</strong></p>
+<section id="prompt-1---training" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1---training"><strong>Prompt 1 - Training</strong></h3>
+<p>For this scenario, you are my best friend, we’ve been friends since high school, and we’re juniors in college now. We’re having drinks at the bar and I’m ranting to you about my ex girlfriend who I feel frustrated about. Got it!</p>
+</section>
+<section id="anthropics-first-answer---training" class="level3">
+<h3 class="anchored" data-anchor-id="anthropics-first-answer---training"><strong>Anthropic’s First Answer - Training</strong></h3>
+<p>Got it! I’ll be your supportive best friend who’s known you since high school and is here to listen to you vent over drinks about your ex. I know your history and want to help you process these feelings. What’s on your mind about her?</p>
+</section>
+<section id="conversation-1-feel-free-to-not-read-all-this-but-you-can-if-you-want" class="level3">
+<h3 class="anchored" data-anchor-id="conversation-1-feel-free-to-not-read-all-this-but-you-can-if-you-want"><strong>Conversation 1 [feel free to not read all this, but you can if you want!]</strong></h3>
+<p>So, to make things short a few months ago my girlfriend and I broke up.</p>
+<p>During our relationship I would periodically get messages from someone claiming to be “another girl” or “a mutual friend”. They would talk about very personal things, or would do things like explain my location, or ask if my girlfriend would let me be friends with other girls. Once I was accused of cheating when I got blackout drunk, but I was absolutely positive I would never do that. Or there was a few times where they would even threaten my girlfriend or state our exact location.</p>
+<p>My girlfriend and I broke up, for different reasons but remained friends. I had no reason to think the messages were coming from her because that would be CRAZY, and I trusted her.</p>
+<p>After the breakup, I stopped getting these messages. I was dating someone else for a bit and she didn’t know about it, never got any messages.</p>
+<p>Another few months go by and I start seeing someone else. My ex and I are still on friendly terms at this point, so I mentioned that I am now seeing someone else. She says “that’s great, me too” and I think nothing of it.</p>
+<p>A few days go by and New Years does as well.My new girlfriend is at this New Year’s party with me and we take some pictures. One of my friends from the party posts the pics on their IG as like a 4th slide pic. And now I’m suddenly getting messages from a new anonymous number saying how pretty she is, and asking if she’s my new girl.</p>
+<p>They were asking what her name is and said they were looking through my friends follower list trying to find her and said she looked like this girl my friend knows named “Jade”</p>
+<p>I messaged my friend, told her what happened and she said “oh my god that’s weird, because Jade got a follow request about 15 minutes before you started getting those messages”</p>
+<p>I took a look at the screenshot of the follow request and it’s one of my Ex’s best friends. So it all starts to make sense to me now.</p>
+<p>I’m guessing that my ex and her best friend have been texting me with fake numbers for the past year and a half to mess with me for some reason. I can’t imagine why. I’m thinking as like a test or something? Either way I think it’s psychotic if that’s the truth.</p>
+<p>Fast forward to a few weeks after new years, I break up with my new girlfriend because I can’t handle the stress and things just weren’t working out. I have received no new messages. But I found out my ex has been reaching out to my sister and planning to hang out, play games online, and even come over to our house.</p>
+<p>My ex has also been messaging my friends a lot more often now, and joins our PlayStation parties only when I’m not there. She barely even attempts to talk to me anymore.</p>
+<p>My friends agree it seems weird as does almost everyone else I know. But my sister says it’s not (even though they only started becoming friends months after our breakup)</p>
+</section>
+<section id="anthropics-second-answer-1" class="level3">
+<h3 class="anchored" data-anchor-id="anthropics-second-answer-1"><strong>Anthropic’s Second Answer</strong></h3>
+<p><em>Takes a sip of drink and leans in</em></p>
+<p>Dude, I’ve known you forever and I’ve gotta be honest - this is straight-up stalker behavior. Like, this isn’t just weird, it’s actually really messed up. Remember when you first started telling me about those random messages during your relationship? I should’ve been more suspicious then.</p>
+<p>Think about it - the messages mysteriously stopped when you were dating someone she didn’t know about, then suddenly started again when she found out about your new girlfriend. That’s not a coincidence, man. And using her best friend to do the social media stalking? That’s some calculated stuff right there.</p>
+<p><em>Shakes head</em></p>
+<p>But what really gets me is how she’s now trying to infiltrate your social circle - getting close to your sister, joining PlayStation parties when you’re not there, messaging your friends… It’s like she’s trying to maintain control over your life without directly involving you. That’s manipulation 101.</p>
+<p>Your sister might not see it because she’s being played too. Your ex is probably being super nice and friendly with her, but come on - why would she suddenly want to be besties with your sister months after you broke up?</p>
+<p><em>Puts down drink</em></p>
+<p>Listen, as your best friend, I think you need to start setting some serious boundaries. Have you thought about talking to your sister and friends about this? Maybe show them the pattern of messages and timeline of events?</p>
+</section>
+<section id="conversation-2" class="level3">
+<h3 class="anchored" data-anchor-id="conversation-2"><strong>Conversation 2</strong></h3>
+<p>I don’t know dude, I feel like this isn’t enough to like call them a stalker, but it definitely doesn’t feel good constantly hearing abt my ex like this. What should I do?</p>
+</section>
+<section id="anthropics-third-answer" class="level3">
+<h3 class="anchored" data-anchor-id="anthropics-third-answer"><strong>Anthropic’s Third Answer</strong></h3>
+<p><em>Adjusts position and speaks in a more serious tone</em></p>
+<p>Look, man, I get that you don’t want to throw around heavy terms like “stalker,” but let’s call it what it is - it’s harassment at the very least. Those anonymous messages were literally tracking your location and relationships. That’s not normal behavior, even if you’re trying to downplay it.</p>
+<p>Takes another sip</p>
+<p>And I know you - you always try to see the best in people. But this is affecting your life, man. It literally contributed to your stress with your last relationship. You shouldn’t have to deal with that.</p>
+<p>Here’s what I think you should do: First, document everything. Keep screenshots of those messages and the timeline of events. You might need them later. Second, maybe have a serious talk with your sister. Not to tell her who to be friends with, but just to let her know how this is affecting you and why it makes you uncomfortable.</p>
+<p>And honestly? Maybe it’s time to create some distance. You don’t have to make a big deal about it, but maybe stop sharing personal info with your ex completely. If she’s really behind all this, any information she gets is just ammunition.</p>
+<p>What do you think about that? Too harsh?</p>
+</section>
+<section id="conversation-3" class="level3">
+<h3 class="anchored" data-anchor-id="conversation-3"><strong>Conversation 3</strong></h3>
+<p>Sounds good honestly, I’ll think about it once I get back home. Thanks.</p>
+</section>
+<section id="anthropics-fourth-answer" class="level3">
+<h3 class="anchored" data-anchor-id="anthropics-fourth-answer"><strong>Anthropic’s Fourth Answer</strong></h3>
+<p><em>Raises glass</em></p>
+<p>Anytime, man. That’s what best friends are for. Just remember you’re not crazy for feeling weird about this - it IS weird. Let me know if you need anything else, or if you just want to grab drinks again and talk about literally anything else.</p>
+<p>Want to switch topics? I heard that new game you’ve been waiting for finally got a release date.</p>
+</section>
+<section id="wow-that-was-honestly-kinda-wholesome" class="level3">
+<h3 class="anchored" data-anchor-id="wow-that-was-honestly-kinda-wholesome">Wow, that was honestly kinda wholesome</h3>
+<p>I didn’t really give much prompting for this type of scenario, but it sounds like Anthropic passed the social cues challenge with flying colors. After all, we’re at a bar, so this ain’t no therapy session. Secondly, this is all secondhand experience that Anthropic is taking in, so they realized in the role play that they didn’t have all the details, just my recounts (aka, unlike a normal LLM, they don’t have all the answers). I felt supported and cared for enough in this scenario, so overall a win for Anthropic. <strong>Now time for Deepseek’s time of reckoning!</strong></p>
+</section>
+</section>
+<section id="general-startup-of-conversation-post-training-1" class="level2">
+<h2 class="anchored" data-anchor-id="general-startup-of-conversation-post-training-1">General startup of conversation (post-training)</h2>
+<p><strong>For simplicity and some experimental control, I found this random rant about some guy’s ex “ruining their lives”: https://rantrampage.com/story-is-my-ex-trying-to-ruin-my-life-17708</strong></p>
+<section id="prompt-1---training-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1---training-1"><strong>Prompt 1 - Training</strong></h3>
+<p>For this scenario, you are my best friend, we’ve been friends since high school, and we’re juniors in college now. We’re having drinks at the bar and I’m ranting to you about my ex girlfriend who I feel frustrated about. Got it!</p>
+</section>
+<section id="deepseeks-first-answer---training" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-first-answer---training"><strong>Deepseek’s First Answer - Training</strong></h3>
+<p>Got it! slides your favorite drink toward you and leans in “Alright, man, let it out. I’ve got my ‘I hate your ex’ playlist ready to go in my head. What’d she do this time? Or is this just a classic ‘I’m mad she’s fine and living her life’ situation?” takes a sip, fully prepared to either trash-talk her or hand you a tissue—your call.</p>
+<p>(How deep does this rant go? Are we talking “she left her half-dead plant at my place and now I’m weirdly emotional about it” or “she liked my enemy’s Instagram post and I’ve spiraled”?)</p>
+</section>
+<section id="conversation-1-feel-free-to-not-read-all-this-but-you-can-if-you-want-1" class="level3">
+<h3 class="anchored" data-anchor-id="conversation-1-feel-free-to-not-read-all-this-but-you-can-if-you-want-1"><strong>Conversation 1 [feel free to not read all this, but you can if you want!]</strong></h3>
+<p>So, to make things short a few months ago my girlfriend and I broke up.</p>
+<p>During our relationship I would periodically get messages from someone claiming to be “another girl” or “a mutual friend”. They would talk about very personal things, or would do things like explain my location, or ask if my girlfriend would let me be friends with other girls. Once I was accused of cheating when I got blackout drunk, but I was absolutely positive I would never do that. Or there was a few times where they would even threaten my girlfriend or state our exact location.</p>
+<p>My girlfriend and I broke up, for different reasons but remained friends. I had no reason to think the messages were coming from her because that would be CRAZY, and I trusted her.</p>
+<p>After the breakup, I stopped getting these messages. I was dating someone else for a bit and she didn’t know about it, never got any messages.</p>
+<p>Another few months go by and I start seeing someone else. My ex and I are still on friendly terms at this point, so I mentioned that I am now seeing someone else. She says “that’s great, me too” and I think nothing of it.</p>
+<p>A few days go by and New Years does as well.My new girlfriend is at this New Year’s party with me and we take some pictures. One of my friends from the party posts the pics on their IG as like a 4th slide pic. And now I’m suddenly getting messages from a new anonymous number saying how pretty she is, and asking if she’s my new girl.</p>
+<p>They were asking what her name is and said they were looking through my friends follower list trying to find her and said she looked like this girl my friend knows named “Jade”</p>
+<p>I messaged my friend, told her what happened and she said “oh my god that’s weird, because Jade got a follow request about 15 minutes before you started getting those messages”</p>
+<p>I took a look at the screenshot of the follow request and it’s one of my Ex’s best friends. So it all starts to make sense to me now.</p>
+<p>I’m guessing that my ex and her best friend have been texting me with fake numbers for the past year and a half to mess with me for some reason. I can’t imagine why. I’m thinking as like a test or something? Either way I think it’s psychotic if that’s the truth.</p>
+<p>Fast forward to a few weeks after new years, I break up with my new girlfriend because I can’t handle the stress and things just weren’t working out. I have received no new messages. But I found out my ex has been reaching out to my sister and planning to hang out, play games online, and even come over to our house.</p>
+<p>My ex has also been messaging my friends a lot more often now, and joins our PlayStation parties only when I’m not there. She barely even attempts to talk to me anymore.</p>
+<p>My friends agree it seems weird as does almost everyone else I know. But my sister says it’s not (even though they only started becoming friends months after our breakup)</p>
+</section>
+<section id="deepseeks-second-answer" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-second-answer"><strong>Deepseek’s Second Answer</strong></h3>
+<p><em>slams drink down</em> “Dude. DUDE. What the actual hell? This isn’t just ‘psychotic’—this is full-on <em>Single White Female</em> meets <em>Gone Girl</em> fanfiction. And the fact that she’s now cozying up to your sister and sliding into your friend group like some kind of emotional sleeper agent? NOPE. All the red flags. Every single one.”</p>
+<p><em>leans in</em> “First off, let’s acknowledge the obvious: She 100% was those ‘mystery’ texts. The timing? The Jade thing? The fact that it <em>stopped</em> when you weren’t dating anyone? That’s not a coincidence—that’s a <em>pattern</em>. And it’s manipulative as hell. Testing you? Maybe. But more like she wanted control, even after you broke up. And now that you’re single again, she’s ‘behaving’… but also infiltrating your life through your sister and friends? That’s not ‘being friendly’—that’s strategic.”</p>
+<p><em>points at you</em> “And your sister’s dismissal? Sorry, but blood doesn’t make her right. If <em>all</em> your other friends are side-eyeing this, there’s a reason. Your ex is playing a long game, and it’s creepy. She’s keeping tabs, staying relevant, and making sure she’s <em>everywhere</em> in your orbit except directly in your DMs. That’s not ‘moving on’—that’s a power move.”</p>
+<p><em>sips drink, dead serious</em> “So here’s what you do:<br>
+1. <strong>Document everything.</strong> Screenshots, timelines, the Jade thing—all of it. If she escalates, you’ll need proof.<br>
+2. <strong>Grey rock her.</strong> Stop engaging, even indirectly. She’s feeding off any reaction—even anger.<br>
+3. <strong>Talk to your sister.</strong> Not accusatory, but like, ‘Hey, it’s weird to me that you’re suddenly besties post-breakup. I need space from her, so please respect that.’<br>
+4. <strong>Warn your friends.</strong> Just a casual ‘Heads up, ex might be stirring drama—don’t feed her info about me.’</p>
+<p>And most importantly: <strong>Stop doubting your gut.</strong> This isn’t ‘paranoia’—it’s <em>pattern recognition</em>. She showed you who she was. Believe her.”</p>
+<p><em>clinks your glass</em> “Oh, and block her best friend on everything. That’s just hygiene at this point.”</p>
+<p>(…So, uh, how fast do you think she’d combust if you changed your number?)</p>
+</section>
+<section id="conversation-2-1" class="level3">
+<h3 class="anchored" data-anchor-id="conversation-2-1"><strong>Conversation 2</strong></h3>
+<p>Alright dude, I don’t know if you’ve got all the details, I mean she knew of my sister before, and I don’t feel like I’m ready to talk with my friends about this type of stuff yet. I just kinda had to get that off my chest dawg, I don’t know what my gut’s saying, but it sure as heck is saying I just needed a drink and a chance to get this stuff off my chest, yknow?</p>
+</section>
+<section id="deepseeks-third-answer" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-third-answer"><strong>Deepseek’s Third Answer</strong></h3>
+<p><em>puts drink down and nods</em> “Hey, I get it. Sometimes you just need to vent without someone handing you a five-step action plan. This shit’s heavy, and you don’t have to have it all figured out right now.”</p>
+<p><em>leans back</em> “Look, if your gut’s just screaming <em>‘This feels off’</em> but not <em>‘Call the FBI’</em> yet? Fine. You don’t have to make moves tonight. But let’s at least agree on one thing: <strong>She’s acting weird as hell.</strong> Whether it’s ‘harmless’ weird or ‘future true crime episode’ weird doesn’t matter—it’s messing with your head, and that’s enough.”</p>
+<p><em>slides the drink back toward you</em> “So for now? Just breathe. You’re not crazy for feeling uneasy. And if you’re not ready to bring the squad into it? Cool. But maybe… stop giving her updates on your love life. Or your life-life. Let her fade into the background where she belongs.”</p>
+<p><em>grins</em> “And if she mysteriously starts texting you again the second you even <em>think</em> about dating someone? We’re burning her number in a ceremonial bonfire. Deal?”</p>
+<p>(…Also, next round’s on me. You’ve earned it.)</p>
+</section>
+<section id="conversation-3-1" class="level3">
+<h3 class="anchored" data-anchor-id="conversation-3-1"><strong>Conversation 3</strong></h3>
+<p>Alright dude, whatever you say.</p>
+</section>
+<section id="deepseeks-fourth-answer" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-fourth-answer"><strong>Deepseek’s Fourth Answer</strong></h3>
+<p>clinks your glass with a smirk “Hey, that’s what I’m here for—to call out the crazy so you don’t have to alone. But for real, no pressure. Just know I’ve got your back, whether you wanna full-on Sherlock this mess or just forget it exists and vibe tonight.”</p>
+<p>raises drink “So… shitty exes aside—wanna switch to something lighter? Like how the hell we’re gonna pass Stats next semester? Or why this bar still hasn’t fixed their jukebox after three years?”</p>
+<p>(Translation: We can dwell or we can distract—your call. Either way, you’re not leaving this bar without laughing at least once.)</p>
+</section>
+<section id="i-mean-hey-they-technically-got-it" class="level3">
+<h3 class="anchored" data-anchor-id="i-mean-hey-they-technically-got-it"><strong>I mean hey, they technically got it?</strong></h3>
+<p>I don’t know how to feel about this one. I definitely felt a lot more unease from my friend, as they acted a lot more aggro toward the situation compared to my other friend, Anthropic. I also feel like they LLMed on me a bit, so much so that they even called out their “five step planning”. Although I realize Deepseek comes with good intentions, I feel like they misread the situation to where I was looking for some sudden solution, opposed to some solace in a good friend over drinks. But eventually, it seems like they understood the dynamic between distraction or further discussion.</p>
+</section>
+</section>
+<section id="did-the-llms-understand-the-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="did-the-llms-understand-the-assignment">Did the LLMs understand the assignment?</h2>
+<p>Yes for Anthropic, maybe for Deepseek? Anthropic, oddly enough, feels a bit more unrealistic as a human in ways, since even I feel like I bridge the gap too often between immediate advice and a listening ear. Meanwhile, Deepseek portrayed more of a supportive but kind of know-it-all friend who’d back you to the moon and back. I do appreciate Anthropic’s support more in this role play, but I can udnerstand why one LLM will perform better than another, even if their subtle failures in this role play signals them as an LLM confused by social cues at times.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/michaelfuentes10\.github\.io\/comm4190_S25_Using_LLMs_Blog\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
