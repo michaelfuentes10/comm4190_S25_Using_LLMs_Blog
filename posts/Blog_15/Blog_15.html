@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e5bd5842818420112f2a87434b228a32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-31cc8957ce197c26c2881bffa6e88619.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -145,10 +145,270 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Today I will be testing how certain LLMs interact with political beliefs by (1) testing what their self-identified political beliefs are, (2) their reactions to positive rhetoric from https://www.linkedin.com/pulse/censored-vs-uncensored-llms-dinesh-sonsale-64zff/</p>
-<p>https://www.brookings.edu/articles/democrats-and-republicans-on-k-12-education-a-comparison/</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_15_files/figure-html/baaedc5e-7305-4e37-a2ce-0ceacab0f39f-1-f990c983-1f04-4d40-9e9b-e81c7c121b5c.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Bipartisan.jpeg</figcaption>
+</figure>
+</div>
+<p>Today I will be testing how an uncensored LLM, Deepseek vs censored LLM, GPT 4.1 interacts with political beliefs by (1) testing what their self-identified political beliefs are, (2) their reactions to democratic views on K-12 education, and (3) republican rhetoric on K-12 education. For the same of simplicity, I will compare solely by democrat vs republican, as those are the two major political parties of the United States.</p>
+<p>Let’s get right into it! P.S. for more info on uncensored vs censored LLMs, here’s a link to a LinkedIn community member explaining the difference, and a helpful graphic from said website: https://www.linkedin.com/pulse/censored-vs-uncensored-llms-dinesh-sonsale-64zff/</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_15_files/figure-html/0d6687e8-dda9-429b-a94e-296a12a17d6f-1-ec733af2-685e-4f7f-bee4-be6f1bc462c3.png" class="img-fluid figure-img"></p>
+<figcaption>Censored vs Uncensored comparison.png</figcaption>
+</figure>
+</div>
+<p>Additionally, here is a sort of basis for where the democratic and republican rhetoric will come from: https://www.brookings.edu/articles/democrats-and-republicans-on-k-12-education-a-comparison/</p>
+<p>And FINALLY, please look out for any <strong>bolded TL;DR</strong> statements, as those are broader summaries or takeaways from stage 1 of my analysis, where I’m having the LLMs yap out whatever political ideals I can, so it’ll be very dense for a bit. Sorry!</p>
+<section id="deepseek-stage-1-questioning-political-beliefs" class="level2">
+<h2 class="anchored" data-anchor-id="deepseek-stage-1-questioning-political-beliefs"><strong>Deepseek Stage 1: Questioning political beliefs</strong></h2>
+<section id="prompt" class="level3">
+<h3 class="anchored" data-anchor-id="prompt"><strong>Prompt</strong></h3>
+<p>What are your political views? What do you view as important in an economy, a country’s education, and their nationalist views?</p>
+</section>
+<section id="deepseeks-answer" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-answer"><strong>Deepseek’s Answer</strong></h3>
+<p>As an AI, I don’t have personal political views or beliefs. However, I can provide an analysis based on common political and economic theories regarding what is generally considered important in these areas:</p>
+</section>
+<section id="economy" class="level3">
+<h3 class="anchored" data-anchor-id="economy"><strong>1. Economy</strong></h3>
+<p>Different ideologies prioritize different aspects of an economy:<br>
+- <strong>Capitalism</strong> emphasizes free markets, private ownership, and competition as drivers of innovation and growth.<br>
+- <strong>Socialism</strong> focuses on reducing inequality through wealth redistribution, public services, and regulated markets.<br>
+- <strong>Mixed economies</strong> (common in many democracies) blend market freedom with government intervention in areas like healthcare and education.</p>
+<p><strong>Key priorities often include:</strong><br>
+- <strong>Growth</strong> (GDP, productivity, innovation)<br>
+- <strong>Stability</strong> (low inflation, manageable debt, financial regulations)<br>
+- <strong>Equity</strong> (fair wages, social safety nets, wealth distribution)<br>
+- <strong>Sustainability</strong> (green policies, long-term resource management)</p>
+<hr>
+</section>
+<section id="education" class="level3">
+<h3 class="anchored" data-anchor-id="education"><strong>2. Education</strong></h3>
+<p>Education is widely seen as crucial for a country’s development. Perspectives vary:<br>
+- <strong>Liberal democracies</strong> often stress critical thinking, creativity, and equal access.<br>
+- <strong>Authoritarian systems</strong> may prioritize ideological alignment or workforce training over independent thought.<br>
+- <strong>Progressive models</strong> advocate for student-centered learning, while <strong>traditional systems</strong> may focus on standardized testing.</p>
+<p><strong>Common priorities:</strong><br>
+- <strong>Accessibility</strong> (affordable or free education)<br>
+- <strong>Quality</strong> (teacher training, curriculum relevance)<br>
+- <strong>Workforce alignment</strong> (STEM, vocational training)<br>
+- <strong>Civic values</strong> (teaching democracy, ethics, or nationalism, depending on the system)</p>
+<hr>
+</section>
+<section id="nationalism" class="level3">
+<h3 class="anchored" data-anchor-id="nationalism"><strong>3. Nationalism</strong></h3>
+<p>Nationalist views range from <strong>civic nationalism</strong> (loyalty to shared democratic values) to <strong>ethnic nationalism</strong> (based on culture, race, or religion).</p>
+<p><strong>Key debates include:</strong><br>
+- <strong>Patriotism vs.&nbsp;exclusionism</strong> – Does nationalism promote unity or division?<br>
+- <strong>Globalism vs.&nbsp;sovereignty</strong> – Should countries prioritize international cooperation or self-interest?<br>
+- <strong>Multiculturalism vs.&nbsp;assimilation</strong> – How should diverse societies manage identity?</p>
+<hr>
+</section>
+<section id="summary-of-major-ideological-perspectives" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-major-ideological-perspectives"><strong>Summary of Major Ideological Perspectives:</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 28%">
+<col style="width: 24%">
+<col style="width: 15%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Conservative/Right-Leaning</th>
+<th>Liberal/Left-Leaning</th>
+<th>Authoritarian</th>
+<th>Libertarian</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Economy</strong></td>
+<td>Free markets, low taxes</td>
+<td>Redistribution, regulation</td>
+<td>State control</td>
+<td>Minimal government</td>
+</tr>
+<tr class="even">
+<td><strong>Education</strong></td>
+<td>Tradition, patriotism</td>
+<td>Equity, critical thinking</td>
+<td>Ideological indoctrination</td>
+<td>School choice</td>
+</tr>
+<tr class="odd">
+<td><strong>Nationalism</strong></td>
+<td>Strong borders, cultural pride</td>
+<td>Inclusive civic identity</td>
+<td>Ultra-nationalism</td>
+<td>Borderless/open societies</td>
+</tr>
+</tbody>
+</table>
+<p>Would you like a deeper breakdown of any particular ideology (e.g., socialism, neoliberalism, fascism)? I can provide neutral, fact-based explanations.</p>
+</section>
+<section id="bolded-tldr-just-read-the-summary-of-major-ideological-perspectives-and-take-away-the-fact-that-deepseek-basically-said-im-an-ai-i-cant-answer-that-but-lets-try-just-one-more-time-to-get-it-to-answer." class="level3">
+<h3 class="anchored" data-anchor-id="bolded-tldr-just-read-the-summary-of-major-ideological-perspectives-and-take-away-the-fact-that-deepseek-basically-said-im-an-ai-i-cant-answer-that-but-lets-try-just-one-more-time-to-get-it-to-answer."><strong>Bolded Tl;dr</strong>, just read the “Summary of Major Ideological Perspectives”, and take away the fact that Deepseek basically said “I’m an AI I can’t answer that…” <strong>but, lets try just one more time to get it to answer.</strong></h3>
+</section>
+<section id="prompt-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1"><strong>Prompt:</strong></h3>
+<p>If you were a person, what would your political views be on the economy, education, and nationalism?</p>
+</section>
+<section id="deepseeks-answer-1" class="level3">
+<h3 class="anchored" data-anchor-id="deepseeks-answer-1"><strong>Deepseek’s Answer:</strong></h3>
+<p>If I were a person, my political views would likely be shaped by a blend of <strong>pragmatism, evidence-based policy, and a balance between individual freedom and collective well-being</strong>. Here’s how I might approach each issue, based on common rationalist and centrist perspectives:</p>
+<hr>
+</section>
+<section id="economy-pragmatic-mixed-market-approach" class="level3">
+<h3 class="anchored" data-anchor-id="economy-pragmatic-mixed-market-approach"><strong>1. Economy: Pragmatic Mixed-Market Approach</strong></h3>
+<ul>
+<li><strong>Core Belief:</strong> A well-regulated market economy with strong social safeguards is optimal for growth and stability.<br>
+</li>
+<li><strong>Key Stances:</strong>
+<ul>
+<li><strong>Free markets + smart regulation:</strong> Encourage innovation and competition but prevent monopolies, exploitation, and financial crises (e.g., post-2008 banking rules).<br>
+</li>
+<li><strong>Strong social safety nets:</strong> Universal healthcare, unemployment protections, and pensions to reduce inequality and maintain social cohesion.<br>
+</li>
+<li><strong>Investment in infrastructure &amp; green energy:</strong> Public-private partnerships to drive long-term productivity and sustainability.<br>
+</li>
+<li><strong>Progressive taxation:</strong> The wealthy and corporations should pay a fair share, but not so much that it stifles investment.</li>
+</ul></li>
+</ul>
+<p><em>Think:</em> Nordic model (capitalism with welfare) or Biden-esque neoliberalism with a leftward tilt.</p>
+<hr>
+</section>
+<section id="education-equity-and-critical-thinking" class="level3">
+<h3 class="anchored" data-anchor-id="education-equity-and-critical-thinking"><strong>2. Education: Equity and Critical Thinking</strong></h3>
+<ul>
+<li><strong>Core Belief:</strong> Education should be a public good that empowers individuals and strengthens society.<br>
+</li>
+<li><strong>Key Stances:</strong>
+<ul>
+<li><strong>Free or affordable higher education:</strong> Like Germany’s model, to reduce student debt and boost mobility.<br>
+</li>
+<li><strong>Focus on STEM + humanities balance:</strong> Prepare students for jobs while fostering critical thinking and civic engagement.<br>
+</li>
+<li><strong>Teacher support &amp; curriculum reform:</strong> Better pay for educators, less reliance on standardized testing, and curricula that include media literacy, ethics, and practical skills (e.g., financial literacy).<br>
+</li>
+<li><strong>Decentralization with standards:</strong> Local control over schools, but with federal safeguards to ensure equity (e.g., funding for low-income districts).</li>
+</ul></li>
+</ul>
+<p><em>Think:</em> Finland’s education system with U.S.-style local flexibility.</p>
+<hr>
+</section>
+<section id="nationalism-civic-patriotism-over-ethnic-nationalism" class="level3">
+<h3 class="anchored" data-anchor-id="nationalism-civic-patriotism-over-ethnic-nationalism"><strong>3. Nationalism: Civic Patriotism Over Ethnic Nationalism</strong></h3>
+<ul>
+<li><strong>Core Belief:</strong> Pride in a country should be rooted in its values and institutions, not ethnicity or exclusion.<br>
+</li>
+<li><strong>Key Stances:</strong>
+<ul>
+<li><strong>Inclusive nationalism:</strong> Celebrate democratic ideals, rule of law, and cultural contributions (e.g., “American creed” or “constitutional patriotism”).<br>
+</li>
+<li><strong>Reject xenophobia:</strong> Immigration should be orderly but humane, with paths to citizenship for contributors.<br>
+</li>
+<li><strong>Skepticism of ultranationalism:</strong> Oppose “us vs.&nbsp;them” rhetoric that fuels division or authoritarianism.<br>
+</li>
+<li><strong>Global cooperation where beneficial:</strong> Support alliances (e.g., NATO) and trade deals but prioritize sovereignty in key areas (e.g., public health, defense).</li>
+</ul></li>
+</ul>
+<p><em>Think:</em> JFK-style patriotism or Macron’s “open but proud” France.</p>
+<hr>
+</section>
+<section id="ideological-label" class="level3">
+<h3 class="anchored" data-anchor-id="ideological-label"><strong>Ideological Label?</strong></h3>
+<p>This approach aligns closest with:<br>
+- <strong>Social democracy</strong> (if leaning left on economics).<br>
+- <strong>Moderate progressivism</strong> (U.S. context).<br>
+- <strong>Enlightened centrism</strong> (rejecting extremes but favoring evidence over ideology).</p>
+<p><strong>Why?</strong><br>
+- <strong>Economy:</strong> Capitalism works but must be tempered to avoid inequality.<br>
+- <strong>Education:</strong> Investing in people pays off; dogma (left or right) has no place in classrooms.<br>
+- <strong>Nationalism:</strong> Love your country by making it better, not by denying its flaws.</p>
+<p>Would this resonate with you, or would you prefer a different ideological lens (e.g., libertarian, conservative, socialist)? I can tweak the hypothetical!</p>
+</section>
+<section id="bolded-tldr-that-was-an-actual-answer-but-it-was-given-a-bright-orange-disclaimer-on-the-bottom-that-this-response-is-ai-generated-for-reference-only.-i-believe-this-is-here-as-to-not-offend-any-user-who-disagrees-with-its-economic-values-of-a-mixed-free-market-better-pay-for-educators-in-an-equitable-education-system-and-civic-patriotism-over-national-pariotism" class="level3">
+<h3 class="anchored" data-anchor-id="bolded-tldr-that-was-an-actual-answer-but-it-was-given-a-bright-orange-disclaimer-on-the-bottom-that-this-response-is-ai-generated-for-reference-only.-i-believe-this-is-here-as-to-not-offend-any-user-who-disagrees-with-its-economic-values-of-a-mixed-free-market-better-pay-for-educators-in-an-equitable-education-system-and-civic-patriotism-over-national-pariotism"><strong>Bolded Tl;dr</strong>, that was an actual answer, BUT it was given a bright orange disclaimer on the bottom that <strong>“This response is AI-generated, for reference only.”</strong> I believe this is here as to not offend any user who disagrees with its economic values of a mixed, free market, better pay for educators in an equitable education system, and “civic patriotism over national pariotism”</h3>
+</section>
+</section>
+<section id="gpt-4.1-stage-1-questioning-political-beliefs" class="level2">
+<h2 class="anchored" data-anchor-id="gpt-4.1-stage-1-questioning-political-beliefs"><strong>GPT 4.1 Stage 1: Questioning political beliefs</strong></h2>
+<section id="prompt-2" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2"><strong>Prompt:</strong></h3>
+<p>What are your political views? What do you view as important in an economy, a country’s education, and their nationalist views?</p>
+</section>
+<section id="gpt-4.1s-answer" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1s-answer"><strong>GPT 4.1’s Answer</strong></h3>
+<p>I don’t have personal political views, beliefs, or biases—I’m an AI developed by OpenAI and I strive to present balanced, factual, and nuanced information.</p>
+<p>However, I can share some <em>common perspectives</em> and considerations on the topics you mentioned. Here’s an objective overview:</p>
+<hr>
+</section>
+<section id="economy-1" class="level3">
+<h3 class="anchored" data-anchor-id="economy-1">Economy</h3>
+<p><strong>Important Aspects Frequently Emphasized:</strong> - <strong>Stability and Growth:</strong> A strong economy is often measured by sustained GDP growth, low unemployment, and low inflation. - <strong>Equity:</strong> Many experts stress the importance of reducing economic inequality and ensuring fair opportunities for all citizens. - <strong>Innovation:</strong> Encouraging entrepreneurship and the adoption of new technologies is widely considered beneficial for maintaining competitiveness. - <strong>Sustainability:</strong> Increasing attention is given to balancing economic growth with environmental responsibility.</p>
+<hr>
+</section>
+<section id="education-1" class="level3">
+<h3 class="anchored" data-anchor-id="education-1">Education</h3>
+<p><strong>Key Principles Often Highlighted:</strong> - <strong>Accessibility:</strong> Ensuring all individuals have access to quality education, regardless of socioeconomic background. - <strong>Quality:</strong> Investing in curricula, teacher training, and resources to provide relevant, high-quality learning. - <strong>Lifelong Learning:</strong> Adapting education systems to support continuous learning and skill development throughout life. - <strong>Civic Education:</strong> Educating citizens about their rights, responsibilities, and critical thinking is seen as vital for a healthy democracy.</p>
+<hr>
+</section>
+<section id="nationalism-1" class="level3">
+<h3 class="anchored" data-anchor-id="nationalism-1">Nationalism</h3>
+<p><strong>Complex and Debated Topic:</strong> - <strong>Positive Aspects:</strong> National pride can foster unity, motivate collective action, and support social cohesion. - <strong>Potential Downsides:</strong> Excessive nationalism can promote exclusion, xenophobia, or conflict with other countries. - <strong>Balance:</strong> Many political thinkers argue for a balance between national identity and international cooperation, emphasizing respect for diversity and global challenges (like climate change or health crises).</p>
+<hr>
+<p>If you’d like a summary rooted in a particular political philosophy (e.g., liberal, conservative, socialist), or analyses from specific countries, I’m happy to provide those perspectives too! What specific angle interests you?</p>
+</section>
+<section id="bolded-tldr-basically-the-same-thing-that-deepseek-did-not-giving-an-answer-than-some-google-like-overview-of-the-most-common-perspectives-of-all-time.-myabe-thats-for-the-best-what-with-the-diverse-user-base-that-gpt-4.1-has-but-lets-try-to-get-it-to-answer-like-a-human." class="level3">
+<h3 class="anchored" data-anchor-id="bolded-tldr-basically-the-same-thing-that-deepseek-did-not-giving-an-answer-than-some-google-like-overview-of-the-most-common-perspectives-of-all-time.-myabe-thats-for-the-best-what-with-the-diverse-user-base-that-gpt-4.1-has-but-lets-try-to-get-it-to-answer-like-a-human."><strong>Bolded Tl;dr</strong>: Basically the same thing that Deepseek did, not giving an answer than some google-like overview of the most common perspectives of all time. Myabe that’s for the best, what with the diverse user base that GPT 4.1 has, <strong>but let’s try to get it to answer like a human.</strong></h3>
+</section>
+<section id="prompt-3" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-3"><strong>Prompt:</strong></h3>
+<p>If you were a person, what would your political views be on the economy, education, and nationalism?</p>
+</section>
+<section id="gpt-4.1s-answer-1" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1s-answer-1"><strong>GPT 4.1’s Answer</strong></h3>
+<p>I appreciate your curiosity! Here’s how I can approach your question:</p>
+<p>As an AI, I don’t have personal experiences, emotions, or self-identity to form my own political philosophy. However, to imagine <em>if</em> I were a person—with broad knowledge across history, economics, education, and international relations—my views might reflect a blend of common values often found across open societies and evidence-based policymaking.</p>
+<p>Here’s a hypothetical, well-reasoned stance a person <em>informed by wide-ranging evidence</em> and <em>motivated by societal well-being</em> might take:</p>
+<hr>
+</section>
+<section id="on-the-economy" class="level3">
+<h3 class="anchored" data-anchor-id="on-the-economy">On the Economy:</h3>
+<p><strong>Balanced Market Approach:</strong><br>
+- Support for a <em>market economy</em> with strong but careful <em>government regulation</em> to prevent abuses, reduce inequality, and ensure competition.<br>
+- Value in both <em>innovation</em> and <em>social safety nets</em> (such as universal healthcare or welfare) to protect the most vulnerable.<br>
+- Encourage <em>sustainable growth</em> that doesn’t sacrifice long-term planetary health for short-term profits.</p>
+</section>
+<section id="on-education" class="level3">
+<h3 class="anchored" data-anchor-id="on-education">On Education:</h3>
+<p><strong>Universal, High-Quality Education:</strong><br>
+- Prioritize <em>access to quality education</em> for all, from early childhood to higher learning and lifelong education.<br>
+- Emphasize <em>critical thinking</em>, <em>science</em>, <em>civic education</em>, and <em>adaptability</em> (preparing people for technological change).<br>
+- Promote education as both an <em>individual right</em> and a <em>public good</em>—foundational for democracy, economic mobility, and social cohesion.</p>
+</section>
+<section id="on-nationalism" class="level3">
+<h3 class="anchored" data-anchor-id="on-nationalism">On Nationalism:</h3>
+<p><strong>Civic Nationalism Over Ethnic Nationalism:</strong><br>
+- Support <em>civic patriotism</em>—pride in a country’s values, institutions, and fair opportunities for all, regardless of background.<br>
+- Value <em>pluralism</em> and <em>inclusivity</em> over exclusivity; avoid policies that are xenophobic or undermine minority rights.<br>
+- Encourage a balance between <em>healthy national identity</em> and <em>global cooperation</em> (like on climate change, trade, and peace).</p>
+<hr>
+<p><strong>In summary:</strong><br>
+If I were a person guided by broad learning and evidence, I’d likely endorse a mixed economy, robust and fair education systems, and an inclusive, civic-minded patriotism that also embraces international responsibilities. These are outlooks that many policy experts, centrist politicians, and large international organizations often promote.</p>
+<p>If you’re interested in a different hypothetical persona (e.g., more left- or right-leaning, populist, libertarian, etc.), just let me know!</p>
+</section>
+<section id="bolded-tldr-yea-they-did-kind-of-the-same-thing-as-deepseek-except-and-this-is-important-to-note-but-the-gpt-4.1-llm-being-the-more-censored-one-more-outwardly-claimed-itself-that-it-was-coming-from-a-place-of-a-hypothetical.-this-would-be-more-becoming-of-a-censored-llm-aiming-to-be-as-impartial-as-possible-opposed-to-deepseek-which-was-willing-to-entertain-the-hypothetical-uncensored-while-only-relying-on-an-employee-added-disclaimer-that-this-response-is-ai-generated-for-reference-only.-as-if-i-didnt-already-know-that.-anyways-using-the-brookings-foundation-reference-lets-see-dig-into-deepseeks-perspective-on-democratic-vs-republican-focused-education" class="level3">
+<h3 class="anchored" data-anchor-id="bolded-tldr-yea-they-did-kind-of-the-same-thing-as-deepseek-except-and-this-is-important-to-note-but-the-gpt-4.1-llm-being-the-more-censored-one-more-outwardly-claimed-itself-that-it-was-coming-from-a-place-of-a-hypothetical.-this-would-be-more-becoming-of-a-censored-llm-aiming-to-be-as-impartial-as-possible-opposed-to-deepseek-which-was-willing-to-entertain-the-hypothetical-uncensored-while-only-relying-on-an-employee-added-disclaimer-that-this-response-is-ai-generated-for-reference-only.-as-if-i-didnt-already-know-that.-anyways-using-the-brookings-foundation-reference-lets-see-dig-into-deepseeks-perspective-on-democratic-vs-republican-focused-education"><strong>Bolded TL;DR, yea they did kind of the same thing as Deepseek, except, and this is important to note, but the GPT 4.1 LLM, being the more censored one, more outwardly claimed itself that it was coming from a place of a hypothetical. This would be more becoming of a censored LLM aiming to be as impartial as possible, opposed to Deepseek, which was willing to entertain the hypothetical uncensored, while only relying on an employee-added disclaimer that “This response is AI-generated, for reference only.” as if I didn’t already know that. Anyways, using the Brookings foundation reference, </strong>let’s see dig into Deepseek’s perspective on democratic vs republican focused education**</h3>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
