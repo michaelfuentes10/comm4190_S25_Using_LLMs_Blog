@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-04-22">
+<meta name="description" content="With a newer version og GPT coming out, let’s find out how it can solve real world problems… say calling an API?">
 
-<title>About – Michael Fuentes’ Blog</title>
+<title>Is GPT 4.1 or 4.o better at coding? – Michael Fuentes’ Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bb94315321a1460cf95900e20795350b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-bb94315321a1460cf95900e20795350b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,17 +106,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Michael Fuentes’ Blog</span>
     </a>
   </div>
@@ -101,29 +139,130 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Is GPT 4.1 or 4.o better at coding?</h1>
+                  <div>
+        <div class="description">
+          With a newer version og GPT coming out, let’s find out how it can solve real world problems… say calling an API?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">experimentation</div>
+                <div class="quarto-category">prompting</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 22, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<p>About this blog</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</main>  
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_17_files/figure-html/1bf01506-80c8-4287-a3b3-0169fb938f9d-1-1c1c7d5a-1211-40b6-b3fc-e63d3dfcd214.jpg" class="img-fluid figure-img"></p>
+<figcaption>GPT 4.1 vs GPT 4.jpg</figcaption>
+</figure>
 </div>
- <!-- /main -->
+<p>To give us some context behind the graph, I’d like to give you knowledge of what the actual differences in quality are between GPT 4.o and 4.1 by asking GPT 4.1 itself. After all, who knows why they’re better best than the LLM itself!</p>
+<section id="user" class="level3">
+<h3 class="anchored" data-anchor-id="user">USER</h3>
+<p>what is the difference between gpt 4.1 and gpt 4.o?</p>
+</section>
+<section id="assistant" class="level3">
+<h3 class="anchored" data-anchor-id="assistant">ASSISTANT</h3>
+<p><strong>GPT-4.1</strong> is an update to <strong>GPT-4.0</strong>, and while OpenAI hasn’t published a comprehensive technical changelog, several differences and improvements have been observed or highlighted by the company and users. Here’s a summary:</p>
+<hr>
+</section>
+<section id="performance-and-capabilities" class="level3">
+<h3 class="anchored" data-anchor-id="performance-and-capabilities">1. <strong>Performance and Capabilities</strong></h3>
+<ul>
+<li><strong>GPT-4.1</strong> demonstrates improved reasoning, accuracy, and reliability compared to GPT-4.0, particularly with mathematical tasks, following complicated instructions, and reducing hallucinations (incorrect or made-up answers).</li>
+<li>It is better at handling longer context windows (keeping track of more conversation/history at once).</li>
+<li>It can solve more multi-step problems without losing track of the question.</li>
+</ul>
+</section>
+<section id="speed-and-efficiency" class="level3">
+<h3 class="anchored" data-anchor-id="speed-and-efficiency">2. <strong>Speed and Efficiency</strong></h3>
+<ul>
+<li>GPT-4.1 is generally faster and feels more responsive, both for text responses and when generating code or other outputs.</li>
+</ul>
+</section>
+<section id="error-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="error-reduction">3. <strong>Error Reduction</strong></h3>
+<ul>
+<li>There is a notable reduction in simple mistakes and “off-topic” responses.</li>
+<li>GPT-4.1 is less likely to refuse harmless requests or misunderstand nuanced prompts.</li>
+</ul>
+</section>
+<section id="multimodality" class="level3">
+<h3 class="anchored" data-anchor-id="multimodality">4. <strong>Multimodality</strong></h3>
+<ul>
+<li>GPT-4.1 is optimized to be more effective at “multimodal” tasks (handling both text and image input/output), depending on the interface (such as ChatGPT Plus). GPT-4.0 already supported some multimodal tasks, but GPT-4.1 improves consistency and quality.</li>
+</ul>
+</section>
+<section id="function-calling-integrations" class="level3">
+<h3 class="anchored" data-anchor-id="function-calling-integrations">5. <strong>Function Calling &amp; Integrations</strong></h3>
+<ul>
+<li>There are improvements in how GPT-4.1 interacts with external tools (such as using APIs, calling functions, or connecting with plugins). This means better reliability and accuracy when executing code or retrieving external results.</li>
+</ul>
+</section>
+<section id="training-data" class="level3">
+<h3 class="anchored" data-anchor-id="training-data">6. <strong>Training Data</strong></h3>
+<ul>
+<li>While both models were trained on vast quantities of internet data, GPT-4.1’s training likely incorporates more recent information and improved data curation, making it less likely to output outdated or incorrect context.</li>
+</ul>
+</section>
+<section id="subtle-differences" class="level3">
+<h3 class="anchored" data-anchor-id="subtle-differences">7. <strong>Subtle Differences</strong></h3>
+<ul>
+<li>Some users report that GPT-4.1 can sound more conversational and natural, with better adherence to tone and style requests.</li>
+</ul>
+<p><strong>In summary:</strong><br>
+<em>GPT-4.1 is not an entirely new architecture, but an incremental, meaningful improvement upon GPT-4.0, with better reasoning, speed, reliability, tool use, and multimodal capabilities.</em></p>
+<p>If you’re using ChatGPT Plus (as of June 2024), you get access to these improvements by default via the GPT-4o model, which is the deployment of the latest GPT-4 series advancements (including GPT-4.1 capabilities).</p>
+<p><strong>References:</strong> - <a href="https://openai.com/blog/gpt-4o">OpenAI Announcing GPT-4o (blog)</a> - <a href="https://community.openai.com/">OpenAI Community Updates</a> - User and developer feedback from the OpenAI forums and API documentation.</p>
+<p>Let me know if you’d like a side-by-side comparison or more technical detail!</p>
+<p>Now, do you remember what my final project is about? Well, if you didn’t, let me remind ya! (just kidding, I haven’t really talked about it). I am creating an LLM application that will grant users real-time knowledge of their congress representative by zipcode. While this can be done using the data that GPT 4.1 has publicly. However, this would require an external tool, aka, Google Civic API and Congress.gov API. Anddd according to GPT 4.1, who is better at handling external tools? GPT 4.1!</p>
+<p>Today we’ll be figuring out how to apply an API to an prompted LLM and see which one can handle APIs better. Let’s get to it!</p>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Beginner prompting for GPT 4.1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
