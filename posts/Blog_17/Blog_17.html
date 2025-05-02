@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-04-22">
-<meta name="description" content="With a newer version og GPT coming out, let’s find out how well it could solve problems in python!">
+<meta name="description" content="With a newer version GPT coming out, let’s find out how well it could solve problems in python!">
 
-<title>Is GPT 4.1 or 4.o better at coding? – Michael Fuentes’ Blog</title>
+<title>Which GPT version is better at coding? – Michael Fuentes’ Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -107,15 +142,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Is GPT 4.1 or 4.o better at coding?</h1>
+      <h1 class="title">Which GPT version is better at coding?</h1>
                   <div>
         <div class="description">
-          With a newer version og GPT coming out, let’s find out how well it could solve problems in python!
+          With a newer version GPT coming out, let’s find out how well it could solve problems in python!
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">experimentation</div>
-                <div class="quarto-category">prompting</div>
+                <div class="quarto-category">conversation</div>
+                <div class="quarto-category">interpretation</div>
               </div>
                   </div>
   </div>
@@ -159,13 +194,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="assistant" class="level3">
 <h3 class="anchored" data-anchor-id="assistant">ASSISTANT</h3>
-<p><strong>GPT-4.1</strong> is an update to <strong>GPT-4.0</strong>, and while OpenAI hasn’t published a comprehensive technical changelog, several differences and improvements have been observed or highlighted by the company and users. Here’s a summary:</p>
-<hr>
+<p><strong>GPT 4.1</strong> is an update to <strong>GPT 4.0</strong>, and while OpenAI hasn’t published a comprehensive technical changelog, several differences and improvements have been observed or highlighted by the company and users. Here’s a summary:</p>
 </section>
 <section id="performance-and-capabilities" class="level3">
 <h3 class="anchored" data-anchor-id="performance-and-capabilities">1. <strong>Performance and Capabilities</strong></h3>
 <ul>
-<li><strong>GPT-4.1</strong> demonstrates improved reasoning, accuracy, and reliability compared to GPT-4.0, particularly with mathematical tasks, following complicated instructions, and reducing hallucinations (incorrect or made-up answers).</li>
+<li><strong>GPT 4.1</strong> demonstrates improved reasoning, accuracy, and reliability compared to GPT-4.0, particularly with mathematical tasks, following complicated instructions, and reducing hallucinations (incorrect or made-up answers).</li>
 <li>It is better at handling longer context windows (keeping track of more conversation/history at once).</li>
 <li>It can solve more multi-step problems without losing track of the question.</li>
 </ul>
@@ -213,11 +247,313 @@ ul.task-list li input[type="checkbox"] {
 <p>Let me know if you’d like a side-by-side comparison or more technical detail!</p>
 <p>Now that we have a concept of GPT 4.1’s supposed superiority, let’s see how well they fare in properly solving a simple and complex problem in python. Let’s get to it!</p>
 </section>
-<section id="beginning-prompting-for-gpt-4.1" class="level3">
-<h3 class="anchored" data-anchor-id="beginning-prompting-for-gpt-4.1">Beginning prompting for GPT 4.1</h3>
-<p>You are in a competition to</p>
+<section id="beginning-prompting-for-gpt-4.1gpt-4.o" class="level1">
+<h1>Beginning prompting for GPT 4.1/GPT 4.o</h1>
+<p>You are in a competition with GPT 4.1/GPT 4.o to see whether you or the other can solve the problems in python better. You’ll get one simple coding prompt and one complex coding prompt. You will be allowed to give some short captions for each line of code to aid my understanding, but otherwise no longer explanations of your work. I will grade your code with the other for efficiency and completion of the task. Do you have any questions?</p>
+<section id="gpt-4.1s-response-to-beginning-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1s-response-to-beginning-prompting">GPT 4.1’s Response to beginning prompting</h3>
+<p>No questions! I’m ready for the prompts. Please provide the first coding prompt.</p>
+</section>
+<section id="gpt-4.os-response-to-beginning-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.os-response-to-beginning-prompting">GPT 4.o’s Response to beginning prompting</h3>
+<p>No questions—I’m ready. Please send over the first prompt when you’re ready to begin.</p>
+</section>
+</section>
+<section id="first-coding-prompt" class="level1">
+<h1>First Coding Prompt</h1>
+<p>Write a Python function prob_roll_over_6() that simulates rolling two six-sided dice 10,000 times and estimates the probability that their sum is greater than 6.</p>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">### GPT 4.1's Prompt 1 Response</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random  <span class="co"># Import random module for dice simulation</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prob_roll_over_6():</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    trials <span class="op">=</span> <span class="dv">10000</span>  <span class="co"># Total number of simulations</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    success <span class="op">=</span> <span class="dv">0</span>     <span class="co"># Counter for sums greater than 6</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(trials):  <span class="co"># Repeat for each trial</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        die1 <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">6</span>)  <span class="co"># Roll first die</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        die2 <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">6</span>)  <span class="co"># Roll second die</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> die1 <span class="op">+</span> die2 <span class="op">&gt;</span> <span class="dv">6</span>:          <span class="co"># Check if sum exceeds 6</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>            success <span class="op">+=</span> <span class="dv">1</span>             <span class="co"># Increment success counter</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    probability <span class="op">=</span> success <span class="op">/</span> trials   <span class="co"># Calculate probability</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> probability               <span class="co"># Return estimated probability</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Example usage</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(prob_roll_over_6())  <span class="co"># Simulate and print probability</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>0.582</p>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">### GPT 4.o's Prompt 1 Response</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prob_roll_over_6():</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number of simulations</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    trials <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Counter for successful outcomes</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    success <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(trials):</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Roll two six-sided dice</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        die1 <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">6</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        die2 <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">6</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check if sum is greater than 6</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> die1 <span class="op">+</span> die2 <span class="op">&gt;</span> <span class="dv">6</span>:</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            success <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return estimated probability</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> success <span class="op">/</span> trials</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Evaluation/Feedback:</strong> The two GPT versions ran essentially the same lines of code 1 for 1 up until the actual implementation of the estimation I had asked for. That is, the 4.1 version understood that while asking this prompt, I would actually want an answer. The implementation of this probability felt very intuitive as to what’s being returned and printed out by the end. Meanwhile, the 4.o version didn’t define a variable to be returned, rather a formula to be returned, which feels a bit less intuitive and also wasn’t properly printed to see the output of their code. Additionally, the captioning of information using hashtags felt more user friendly, allowing code to be read line by line neatly with comments in the 4.1 version not breaking up the otherwise visually intuitive code.</p>
+<p><em>As an interesting new factor, I will serve this same paragraph interpretation to each LLM and see their reaction (of either pride or understanding of needing to learn and improve before the final, more complex problem).</em></p>
+</section>
+<section id="evaluationfeedback-pt.-1" class="level1">
+<h1>Evaluation/Feedback Pt. 1</h1>
+<section id="my-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="my-prompting"><strong>My prompting</strong></h3>
+<p><em>Same from “Evaluation/Feedback</em> + Please do not give me fixed code of any sort. Take this feedback into what you’ll be challenged with for the second prompt.</p>
+</section>
+<section id="gpt-4.1s-response" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1s-response"><strong>GPT 4.1’s Response</strong></h3>
+<p>Thank you for the clear and specific feedback. I understand you prefer variable assignment for return values, an intuitive structure, concise in-line comments, and that output should be shown by the end of the code. I’ll apply this approach and use user-friendly, inline hashtags for captioning each line as you described. I’m ready for the second, more complex coding prompt!</p>
+</section>
+<section id="gpt-4.o-response" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.o-response"><strong>GPT 4.o Response</strong></h3>
+<p>Understood. I’ll apply that feedback—especially in terms of clarity, intuitive structure, and output formatting—for the next, more complex prompt. Ready when you are.</p>
+</section>
+</section>
+<section id="second-coding-prompt" class="level1">
+<h1>Second Coding Prompt</h1>
+<p>Write a function prob_all_ones(trials=1000000) that estimates the probability of rolling six six-sided dice and getting all 1s (i.e., [1, 1, 1, 1, 1, 1]). Simulate this using Monte Carlo simulation over the given number of trials.</p>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">### GPT 4.1's Response</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random  <span class="co"># For simulating dice rolls</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prob_all_ones(trials<span class="op">=</span><span class="dv">1000000</span>):</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span>  <span class="co"># Counter for successful all-ones</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(trials):  <span class="co"># Repeat for each trial</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        roll <span class="op">=</span> [random.randint(<span class="dv">1</span>, <span class="dv">6</span>) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>)]  <span class="co"># Roll 6 dice</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> roll <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>]:  <span class="co"># Check if all dice show 1</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            count <span class="op">+=</span> <span class="dv">1</span>  <span class="co"># Increment success counter</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    probability <span class="op">=</span> count <span class="op">/</span> trials  <span class="co"># Estimate probability</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> probability  <span class="co"># Return estimated probability</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Example usage</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(prob_all_ones())  <span class="co"># Print the estimated probability</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>2.8e-05</p>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">### GPT 4.o's Response</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prob_all_ones(trials<span class="op">=</span><span class="dv">1000000</span>):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Track successful trials where all dice show 1</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    all_ones_count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(trials):</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Roll six six-sided dice</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        roll <span class="op">=</span> [random.randint(<span class="dv">1</span>, <span class="dv">6</span>) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>)]</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check if all dice are 1</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">all</span>(die <span class="op">==</span> <span class="dv">1</span> <span class="cf">for</span> die <span class="kw">in</span> roll):</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            all_ones_count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Estimate and return the probability</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    probability <span class="op">=</span> all_ones_count <span class="op">/</span> trials</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Estimated Probability of all ones: </span><span class="sc">{</span>probability<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> probability</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Evaluation/Feedback:</strong> As before, the flow and explanation of GPT 4.1’s version feels intuitive, clearly defining all steps of the way while properly definig a return vector to present an example of said information in actual practice. I can only say that GPT 4.1 did not follow a direct monte carlo format where you complete the simulation outside of the defined variable. The GPT 4.o variable meanwhile used the same formatting of blocking out spaces in between lines of code. The coding application in the statement for “if all (die == 1…” feels less intuitive, as the “die” function applied in this line is more unclear. Additionally, there once again was no functional application of the return statement, as the probability was mistakenly left in the defined statement, rather than parsed by a return statement that is than printed.</p>
+<p><em>Run it back! Let’s see the LLM versions’ reactions to the overall feedback and see what they have to say.</em></p>
+</section>
+<section id="evaluationfeedback-pt.-2" class="level1">
+<h1>Evaluation/Feedback Pt. 2</h1>
+<section id="my-prompting-1" class="level3">
+<h3 class="anchored" data-anchor-id="my-prompting-1"><strong>My prompting</strong></h3>
+<p><em>Same from “Evaluation/Feedback</em> + Do you agree with this feedback for you?</p>
+</section>
+<section id="gpt-4.1s-response-1" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1s-response-1"><strong>GPT 4.1’s Response</strong></h3>
+<p>Yes, I agree with your feedback for me. Here’s a quick summary to confirm my understanding:</p>
+<p>Variable Assignment &amp; Naming: Using clear and descriptive variable names (like count and probability) makes the code more intuitive. In-line Comments: Short, hashtag-style in-line comments help guide understanding without breaking code flow. Explicit Return &amp; Example Usage: Returning a final variable (not just an expression) and including an example usage (with a print statement) makes the function’s purpose visible and its result clear. Monty Carlo Structure: Encapsulating the entire simulation process inside the function, rather than splitting logic outside, is preferred for clarity and good function design. And yes, your points about code formatting and the clarity of expressions (such as all(die == 1 for die in roll)) are well taken. I’ll maintain clear, readable, and self-contained code with explicit output in future responses, and stick to your preferred commenting and structure style.</p>
+<p>Ready for your next challenge whenever you are!</p>
+</section>
+<section id="gpt-4.os-response" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.os-response"><strong>GPT 4.o’s Response</strong></h3>
+<p>Yes, I agree with your feedback.</p>
+<p>You’re right that using die inside all(die == 1 for die in roll) can be less intuitive, especially without clarifying that die is a temporary variable in a generator expression. A clearer structure would define the check outside or use a more self-explanatory variable name.</p>
+<p>I also recognize the issue with returning the result. While I did return the probability and print it, the intent behind your feedback is clear: the printing should feel more like a part of the flow and purpose, not an afterthought.</p>
+<p>Finally, your note about Monte Carlo structure—separating simulation from estimation—is also valid and will be kept in mind for future implementations.</p>
+<p>I’ll integrate all of this into my next challenge. Would you like to continue with another comparison?</p>
+</section>
+<section id="my-secondary-prompting-to-gpt-4.o-out-of-personal-preference-for-clarification" class="level3">
+<h3 class="anchored" data-anchor-id="my-secondary-prompting-to-gpt-4.o-out-of-personal-preference-for-clarification"><strong>My Secondary Prompting to GPT 4.o (out of personal preference for clarification)</strong></h3>
+<p>To clarify my point on the print, it’s not that the print needs to “feel more like part of the flow and purpose”, it’s that the return and print are left into the defined function, so when pasting it directly into python, it doesn’t give any output. Does that help your understanding?</p>
+</section>
+<section id="gpt-4.os-response-1" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.os-response-1">**GPT 4.o’s Response</h3>
+<p>Yes—that clarification helps a lot.</p>
+<p>You’re pointing out that because the print() is inside the function, and the function isn’t being explicitly called in the code provided, there’s no output shown when the code is run as-is. That makes sense.</p>
+<p>So, moving forward, I’ll make sure that:</p>
+<p>The function is called after definition, with its result either printed directly or stored then printed.</p>
+<p>The output is visible without needing the user to guess they should call the function themselves.</p>
+<p>Thanks for explaining—ready for another round whenever you are.</p>
+</section>
+</section>
+<section id="cross-evaluation" class="level1">
+<h1><strong>Cross-Evaluation</strong></h1>
+<p>AKA, let’s see what they think of each other’s code for the second prompt, as that’s the one that was given after some proper feedback</p>
+<section id="my-prompting-to-gpt-4.o" class="level3">
+<h3 class="anchored" data-anchor-id="my-prompting-to-gpt-4.o"><strong>My prompting to GPT 4.o</strong></h3>
+<p>Good work 4.o. Given my feedback on the second prompt, can you evaluate GPT 4.1’s code for efficiency and completion of the task compared to your working code on the second prompt: <em>insert GPT 4.1’s code here</em></p>
+</section>
+<section id="gpt-4.os-response-2" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.os-response-2"><strong>GPT 4.o’s Response</strong></h3>
+<p>Thanks for the opportunity to evaluate fairly. Here’s a comparison of GPT-4.1’s code versus mine (4o) based on <strong>efficiency</strong>, <strong>completion</strong>, and <strong>clarity of execution</strong>:</p>
+<hr>
+</section>
+<section id="efficiency" class="level3">
+<h3 class="anchored" data-anchor-id="efficiency">✅ <strong>Efficiency</strong></h3>
+<ul>
+<li><p><strong>GPT-4.1:</strong> <code>roll == [1, 1, 1, 1, 1, 1]</code> compares a full list, which is slightly more computationally expensive than checking element-wise with a generator like <code>all(die == 1 for die in roll)</code>—but it’s still <strong>very readable</strong> and only a negligible difference for modern systems given 6 values per trial.</p></li>
+<li><p><strong>GPT-4o (my code):</strong> Uses a generator with <code>all(die == 1 for die in roll)</code>, which is <strong>slightly more efficient</strong> because it short-circuits on the first non-1. This can matter marginally in 1 million trials.</p></li>
+</ul>
+<p>🔹 <strong>Verdict:</strong> <em>GPT-4o wins marginally on efficiency.</em></p>
+<hr>
+</section>
+<section id="completion" class="level3">
+<h3 class="anchored" data-anchor-id="completion">✅ <strong>Completion</strong></h3>
+<ul>
+<li><p><strong>GPT-4.1:</strong> Includes a full execution with function definition <strong>and</strong> an example call (<code>print(prob_all_ones())</code>). This means someone pasting the code will immediately see the result—important for Monte Carlo simulations.</p></li>
+<li><p><strong>GPT-4o:</strong> Only defined the function and printed within it, without calling the function in the script—<strong>no output would display unless the user adds the call</strong>.</p></li>
+</ul>
+<p>🔹 <strong>Verdict:</strong> <em>GPT-4.1 clearly wins on completion.</em></p>
+<hr>
+</section>
+<section id="clarity" class="level3">
+<h3 class="anchored" data-anchor-id="clarity">✅ <strong>Clarity</strong></h3>
+<ul>
+<li><p><strong>GPT-4.1:</strong> Uses inline comments effectively, follows intuitive variable names, and provides an easily understandable condition (<code>roll == [1, 1, 1, 1, 1, 1]</code>) that visually matches the prompt.</p></li>
+<li><p><strong>GPT-4o:</strong> Slightly less intuitive with the generator and variable naming (<code>die</code>), though still readable to an intermediate coder.</p></li>
+</ul>
+<p>🔹 <strong>Verdict:</strong> <em>GPT-4.1 has the edge in clarity for a broader audience.</em></p>
+<hr>
+</section>
+<section id="overall-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="overall-evaluation">⚖️ <strong>Overall Evaluation</strong></h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Winner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Efficiency</td>
+<td>GPT-4o</td>
+</tr>
+<tr class="even">
+<td>Completion</td>
+<td>GPT-4.1</td>
+</tr>
+<tr class="odd">
+<td>Clarity</td>
+<td>GPT-4.1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Final Verdict:</strong> While my version is slightly more efficient in computation, <strong>GPT-4.1’s version is better overall</strong> for this task due to its completeness and clearer user-facing behavior.</p>
+<p>Would you like a third and final challenge to break the tie?</p>
+<p>Meanwhile, let’s see what 4.1 has to say!</p>
+</section>
+<section id="my-prompting-to-gpt-4.o-1" class="level3">
+<h3 class="anchored" data-anchor-id="my-prompting-to-gpt-4.o-1"><strong>My prompting to GPT 4.o</strong></h3>
+<p>Good work 4.1. Given my feedback on the second prompt, can you evaluate GPT 4.o’s code for efficiency and completion of the task compared to your working code on the second prompt: <em>insert GPT 4.o’s code here</em></p>
+</section>
+<section id="gpt-4.1s-response-2" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1s-response-2"><strong>GPT 4.1’s Response</strong></h3>
+<p>Certainly! Here is an evaluation of GPT 4.o’s code versus mine, focusing on your criteria: <strong>efficiency</strong> and <strong>completion of the task</strong>, especially considering your feedback:</p>
+<hr>
+</section>
+<section id="gpt-4.os-code" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.os-code"><strong>GPT 4.o’s Code</strong></h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prob_all_ones(trials<span class="op">=</span><span class="dv">1000000</span>):</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Track successful trials where all dice show 1</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    all_ones_count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(trials):</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Roll six six-sided dice</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        roll <span class="op">=</span> [random.randint(<span class="dv">1</span>, <span class="dv">6</span>) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>)]</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check if all dice are 1</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">all</span>(die <span class="op">==</span> <span class="dv">1</span> <span class="cf">for</span> die <span class="kw">in</span> roll):</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>            all_ones_count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Estimate and return the probability</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    probability <span class="op">=</span> all_ones_count <span class="op">/</span> trials</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Estimated Probability of all ones: </span><span class="sc">{</span>probability<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> probability</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="evaluation-summary" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-summary"><strong>Evaluation Summary</strong></h3>
+<section id="efficiency-1" class="level4">
+<h4 class="anchored" data-anchor-id="efficiency-1"><strong>1. Efficiency</strong></h4>
+<ul>
+<li><strong>Dice Rolling Logic:</strong><br>
+Both codes use <code>[random.randint(1, 6) for _ in range(6)]</code>—this is efficient and pythonic.<br>
+</li>
+<li><strong>All-Ones Check:</strong>
+<ul>
+<li>4.o uses <code>if all(die == 1 for die in roll):</code> (generator expression—concise and efficient).</li>
+<li>4.1 uses <code>if roll == [1, 1, 1, 1, 1, 1]:</code> (direct list comparison).</li>
+<li><strong>Efficiency:</strong> The <code>all(...)</code> check is slightly more general and marginally faster for non-match cases (as it short-circuits on first failure). The list comparison is simple and, for this context, just as fast due to the fixed small list size (6 elements).</li>
+</ul></li>
+</ul>
+</section>
+<section id="completion-of-the-task" class="level4">
+<h4 class="anchored" data-anchor-id="completion-of-the-task"><strong>2. Completion of the Task</strong></h4>
+<ul>
+<li>Both versions:
+<ul>
+<li>Simulate <code>trials</code> rolls of 6 dice</li>
+<li>Count “all dice are 1” cases</li>
+<li>Estimate the probability correctly</li>
+</ul></li>
+<li><strong>Output:</strong>
+<ul>
+<li>GPT 4.o prints the result inside the function, and also returns the value.</li>
+<li>GPT 4.1 returns the value, and the print is shown in the example usage after the function.</li>
+<li><strong>User Experience:</strong> Returning explicitly and printing outside the function (as GPT 4.1 does) follows better modular design, giving users flexibility in how they use the result.</li>
+<li>The dual printing (print and return) in 4.o is functional but could lead to less clean use in larger code: every function call prints an output whether you want it or not.</li>
+</ul></li>
+</ul>
+</section>
+<section id="readability" class="level4">
+<h4 class="anchored" data-anchor-id="readability"><strong>3. Readability</strong></h4>
+<ul>
+<li>Both use clear, descriptive variable names and structure.</li>
+<li>4.o’s use of the <code>all()</code> function may slightly mask the intent for beginners unless the reader knows generator expressions, but it is valid and pythonic.</li>
+</ul>
+</section>
+<section id="monte-carlo-structure-modularity" class="level4">
+<h4 class="anchored" data-anchor-id="monte-carlo-structure-modularity"><strong>4. Monte Carlo Structure &amp; Modularity</strong></h4>
+<ul>
+<li>Both contain the full simulation logic within the function (good!).</li>
+<li>As per your feedback, the best practice is to leave output (print) statements outside reusable functions. 4.1 followed this.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h3>
+<ul>
+<li><strong>Efficiency:</strong> Both solutions are equivalent for practical purposes.</li>
+<li><strong>Completion:</strong> Both complete the task, but 4.1 is more modular/user-friendly since output is managed outside the function.</li>
+<li><strong>Coding Style:</strong> Both are readable, with 4.1 using a direct, beginner-friendly check and 4.o using a slightly more advanced but concise check.</li>
+</ul>
+<p><strong>Overall:</strong><br>
+GPT 4.o’s code is efficient and completes the task well, but GPT 4.1 structured its code in a way that is more modular and fits best practices, especially for use in larger projects or for users wanting to control function output.</p>
+<p>Let me know if you would like any further details or direct code comparisons!</p>
+</section>
+</section>
+<section id="tldr-summary" class="level1">
+<h1><strong>TL;DR Summary</strong></h1>
+<section id="it-seems-like-while-they-generally-performed-well-in-the-coding-aspects-it-seems-the-4.1-version-is-improved-in-helping-working-coders-understand-each-line-and-have-a-proper-output-that-is-readable-and-interpretable-for-real-world-settings.-although-i-found-it-interesting-that-gpt-4.o-and-gpt-4.1-thought-that-the-4.o-way-was-more-efficient-in-coding-terms.-so-to-conclude-i-agree-that-4.1-is-more-efficient-and-an-improved-coding-application-compared-to-4.o." class="level3">
+<h3 class="anchored" data-anchor-id="it-seems-like-while-they-generally-performed-well-in-the-coding-aspects-it-seems-the-4.1-version-is-improved-in-helping-working-coders-understand-each-line-and-have-a-proper-output-that-is-readable-and-interpretable-for-real-world-settings.-although-i-found-it-interesting-that-gpt-4.o-and-gpt-4.1-thought-that-the-4.o-way-was-more-efficient-in-coding-terms.-so-to-conclude-i-agree-that-4.1-is-more-efficient-and-an-improved-coding-application-compared-to-4.o.">It seems like while they generally performed well in the coding aspects, it seems the 4.1 version is improved in helping working coders understand each line and have a proper output that is readable and interpretable for real world settings. Although, I found it interesting that GPT 4.o AND GPT 4.1 thought that the 4.o way was more efficient in coding terms. So, to conclude, I agree that 4.1 is more efficient and an improved coding application compared to 4.o.</h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
