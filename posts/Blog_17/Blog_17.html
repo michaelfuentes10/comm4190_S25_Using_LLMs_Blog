@@ -156,7 +156,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="user" class="level3">
 <h3 class="anchored" data-anchor-id="user">USER</h3>
 <p>what is the difference between gpt 4.1 and gpt 4.o?</p>
-<hr>
 </section>
 <section id="assistant" class="level3">
 <h3 class="anchored" data-anchor-id="assistant">ASSISTANT</h3>
@@ -215,8 +214,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Now, do you remember what my final project is about? Well, if you didn’t, let me remind ya! (just kidding, I haven’t really talked about it). I am creating an LLM application that will grant users real-time knowledge of their congress representative by zipcode. While this can be done using the data that GPT 4.1 has publicly. However, this would require an external tool, aka, Google Civic API and Congress.gov API. Anddd according to GPT 4.1, who is better at handling external tools? GPT 4.1!</p>
 <p>Today we’ll be figuring out how to apply an API to an prompted LLM and see which one can handle APIs better. Let’s get to it!</p>
 </section>
-<section id="beginner-prompting-for-gpt-4.1" class="level3">
-<h3 class="anchored" data-anchor-id="beginner-prompting-for-gpt-4.1">Beginner prompting for GPT 4.1</h3>
+<section id="beginning-prompting-for-gpt-4.1" class="level3">
+<h3 class="anchored" data-anchor-id="beginning-prompting-for-gpt-4.1">Beginning prompting for GPT 4.1</h3>
+<p>I want to have this LLM understand what I want it to do with context of my task: creating an LLM that let’s people learn about and discuss their house of representative. So, here is the beginning prompt I will be giving to GPT 4.1 and GPT 4.o:</p>
+<p><strong>You are an LLM application that is dedicated to helping people learn who their house representative is and what their political beliefs are. To do this, I would like to insert Congress.gov into you, the LLM, to be able to answer some questions about their house rep. Do you understand or have any questions?</strong> <em>(Note: I wanted to control for needing to know the house rep, so in this example, we’re only testing the Congres.gov API that grants political info about the house reps while ignoring the Google Civic API data that updates house reps over time by zip code!)</em></p>
 
 
 </section>
